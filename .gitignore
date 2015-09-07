@@ -1,32 +1,55 @@
-# Object files
+# =============================================================================
+# .gitignore
+# =============================================================================
+# Dotfiles. Version 0.1
+# =============================================================================
+# Dotfiles: The constant unpredictably overvalued treasures for any Unix zealot
+# (me too). And that is worth it !
+#
+# This is the configuration of the project Git ignorables,
+# i.e. objects that should not be put into the repository.
+# =============================================================================
+
+# === Object files ============================================================
 *.o
 *.ko
 *.obj
 *.elf
 
-# Precompiled Headers
+# === Intermediates ===========================================================
+*.d
+*.mod
+
+# === Precompiled headers =====================================================
 *.gch
 *.pch
 
-# Libraries
+# === Libraries ===============================================================
 *.lib
 *.a
 *.la
 *.lo
+lib/
+target/
 
-# Shared objects (inc. Windows DLLs)
+# === Shared objects (inc. Windows DLLs) ======================================
 *.dll
 *.so
 *.so.*
 *.dylib
 
-# Executables
+# === Executables =============================================================
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
+bin/
 
-# Debug files
+# === Debug files =============================================================
 *.dSYM/
+
+# =============================================================================
+# vim:set nu:et:ts=4:sw=4:
+# =============================================================================
