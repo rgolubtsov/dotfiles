@@ -1,0 +1,22 @@
+# =============================================================================
+# ~/.mailrc
+# =============================================================================
+
+set     v15-compat
+
+account /account-name/ {
+    set folder=mail
+    set MBOX=+mbox.mbox record=+sent.mbox DEAD=+dead.mbox
+    fi  pop3s://rgolubtsov@pop./mailbox-domain/
+
+    set smtp=rgolubtsov@smtp./mailbox-domain/ \
+        smtp-use-starttls
+#        smime-force-encryption
+#        smime-sign
+
+    set from="Radislav Golubtsov <rgolubtsov@/mailbox-domain/>"
+}
+
+# =============================================================================
+# vim:set nu:et:ts=4:sw=4:
+# =============================================================================
