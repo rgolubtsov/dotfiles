@@ -1,0 +1,99 @@
+! =============================================================================
+! ~/.Xresources
+! =============================================================================
+
+! === Xft =====================================================================
+Xft.dpi                                    : 96
+Xft.autohint                               : false
+Xft.hinting                                : true
+Xft.hintstyle                              : hintfull
+Xft.antialias                              : true
+Xft.lcdfilter                              : lcddefault
+Xft.rgba                                   : rgb
+
+! === XScreenSaver ============================================================
+xscreensaver.Dialog.background             : #009900
+xscreensaver.Dialog.foreground             : #000000
+
+xscreensaver.Dialog.borderWidth            : 4
+xscreensaver.Dialog.shadowThickness        : 1
+xscreensaver.Dialog.borderColor            : #22bb22
+xscreensaver.Dialog.topShadowColor         : #009900
+xscreensaver.Dialog.bottomShadowColor      : #009900
+
+xscreensaver.Dialog.headingFont            : -adobe-new century schoolbook-bold-i-normal--34-240-100-100-p-193-iso10646-1
+xscreensaver.Dialog.bodyFont               : -adobe-new century schoolbook-bold-r-normal--20-140-100-100-p-113-iso10646-1
+xscreensaver.Dialog.labelFont              : -adobe-new century schoolbook-bold-r-normal--20-140-100-100-p-113-iso10646-1
+xscreensaver.Dialog.unameFont              : -adobe-new century schoolbook-bold-r-normal--20-140-100-100-p-113-iso10646-1
+xscreensaver.Dialog.passwdFont             : -adobe-new century schoolbook-bold-r-normal--20-140-100-100-p-113-iso10646-1
+xscreensaver.Dialog.dateFont               : -schumacher-clean-bold-r-normal--8-80-75-75-c-80-iso646.1991-irv
+xscreensaver.Dialog.buttonFont             : -adobe-new century schoolbook-bold-r-normal--20-140-100-100-p-113-iso10646-1
+
+xscreensaver.Dialog.text.background        : #22bb22
+xscreensaver.Dialog.text.foreground        : #000000
+
+xscreensaver.Dialog.Button.background      : #009900
+xscreensaver.Dialog.Button.foreground      : #ffff00
+
+xscreensaver.splash.demo.label             :
+xscreensaver.splash.help.label             : ::
+
+xscreensaver.passwd.body.label             : ..:: Arch Linux x86-64 ::..
+xscreensaver.passwd.login.label            :
+xscreensaver.passwd.unlock.label           : ::
+xscreensaver.passwd.thermometer.width      : 6
+xscreensaver.passwd.thermometer.foreground : #007700
+
+xscreensaver.dateFormat                    : %I:%M%P %F %Z (%A)
+
+! === Xterm ===================================================================
+xterm*VT100.geometry                       : 80x25
+xterm*dynamicColors                        : true
+
+xterm*faceName                             : LiberationMono:style=Regular:size=14
+xterm*utf8                                 : 2
+xterm*eightBitInput                        : true
+
+xterm*saveLines                            : 2048
+xterm*scrollBar                            : true
+xterm*rightScrollBar                       : true
+
+! === URxvt ===================================================================
+URxvt*background                           : #000000
+URxvt*foreground                           : #bdbdbd
+
+URxvt*font                                 : xft:LiberationMono:size=14
+URxvt*boldFont                             : xft:LiberationMono:size=14
+URxvt*letterSpace                          : -2
+
+URxvt*scrollstyle                          : next
+URxvt*scrollBar_right                      : true
+URxvt*scrollColor                          : #bdbdbd
+URxvt*secondaryScreen                      : true
+URxvt*secondaryScroll                      : false
+URxvt*secondaryWheel                       : true
+
+URxvt*perl-ext-common                      : tabbed
+URxvt*tabbed.tabbar-bg                     : 7
+URxvt*tabbed.tabbar-fg                     : 0
+URxvt*tabbed.tab-bg                        : 2
+URxvt*tabbed.tab-fg                        : 11
+
+! === XCalc ===================================================================
+XCalc*geometry                             : 260x340
+XCalc*customization                        : -color
+XCalc*bevel.screen*background              : #33cc33
+XCalc*bevel.screen*foreground              : #ffff00
+XCalc*font                                 : -schumacher-clean-bold-r-normal--16-160-75-75-c-80-iso646.1991-irv
+
+! === Xpdf ====================================================================
+xpdf*geometry                              : 896x472
+xpdf*background                            : #009900
+xpdf*foreground                            : #000000
+xpdf*matteColor                            : #006600
+xpdf*fontList                              : -schumacher-clean-bold-r-normal--16-160-75-75-c-80-iso646.1991-irv
+xpdf*initialZoom                           : width
+
+! =============================================================================
+! vim:set nu:et:ts=4:sw=4:
+! =============================================================================
