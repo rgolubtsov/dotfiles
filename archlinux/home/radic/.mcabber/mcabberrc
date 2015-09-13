@@ -1,0 +1,20 @@
+# =============================================================================
+# ~/.mcabber/mcabberrc
+# =============================================================================
+
+#set jid               = rgolubtsov@/old-jabber-domain/
+set jid               = radislav.golubtsov@/new-jabber-domain/
+#set server            = jabber./old-jabber-domain/
+set server            = mail./new-jabber-domain/
+#set port              = 5222
+set port              = 5223
+set resource          = radicz580
+set priority          = 1
+set ssl               = 1
+set ssl_ignore_checks = 1
+set logging           = 1
+set load_logs         = 1
+
+# =============================================================================
+# vim:set nu:et:ts=4:sw=4:
+# =============================================================================
