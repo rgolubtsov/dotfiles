@@ -1,0 +1,10 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# UUID=12bd4f4e-0f94-4d4b-ab60-efacec3eb136
+/dev/sda1           	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# UUID=2f2ecdd9-114c-4fbd-8c33-118b60fe68a1
+/dev/sda2           	none      	swap      	defaults  	0 0
+
