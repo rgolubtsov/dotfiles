@@ -1,18 +1,18 @@
 {
-  soffice.Soffice = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
-  };
   firefox.Firefox = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
+  };
+  soffice.Soffice = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
   };
   gimp.Gimp = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
   };
-  xterm.XTerm = {
-    Icon = GNUterm.tiff;
-  };
   chromium.Chromium = {
     Icon = Mozilla.png;
+  };
+  xterm.XTerm = {
+    Icon = GNUterm.tiff;
   };
   xcalc.XCalc = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/xcalc.XCalc.xpm";
@@ -23,17 +23,14 @@
   screenshot.Screenshot = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/screenshot.Screenshot.xpm";
   };
-  "gradient-flare.Gradient-flare" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gradient-flare.Gradient-flare.xpm";
-  };
-  zoiper.Zoiper = {
-    Icon = "zoiper-48.png";
+  "qtconfig-qt4.Qtconfig-qt4" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/qtconfig-qt4.Qtconfig-qt4.xpm";
   };
   urxvt.URxvt = {
     Icon = linuxterm.tiff;
   };
-  "qtconfig-qt4.Qtconfig-qt4" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/qtconfig-qt4.Qtconfig-qt4.xpm";
+  zoiper.Zoiper = {
+    Icon = "zoiper-48.png";
   };
   win.Xpdf = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/win.Xpdf.xpm";

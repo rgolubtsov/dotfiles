@@ -1,10 +1,11 @@
 {
-  FTitleColor = "#ffffff";
   FrameBorderColor = "#000000";
+  FTitleColor = "#ffffff";
   LTCMaximizeKey = None;
   CycleIgnoreMinimized = YES;
   MoveToPrevWorkspaceLayerKey = None;
   ClipTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=16";
+  MiniwindowPreviewBalloons = NO;
   MouseForwardButtonAction = None;
   MoveToWorkspace7Key = None;
   RBCMaximizeKey = None;
@@ -15,9 +16,11 @@
   MenuTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=16";
   WindowShortcut4Key = None;
   ShadeSpeed = ultraslow;
+  SnapEdgeDetect = 1;
   LBCMaximizeKey = None;
   MenuScrollSpeed = ultraslow;
   HelpBalloons = YES;
+  WindowSnapping = NO;
   MoveResizeKey = None;
   AppIconBalloons = YES;
   FrameFocusedBorderColor = "#000000";
@@ -27,11 +30,14 @@
   BHMaximizeKey = None;
   MouseBackwardButtonAction = None;
   CycleActiveHeadOnly = NO;
+  IgnoreGtkHints = NO;
   WindowShortcut1Key = None;
   RHMaximizeKey = None;
   FrameSelectedBorderColor = "#ffffff";
   THMaximizeKey = None;
   MoveToNextWorkspaceLayerKey = None;
+  WorkspaceMapKey = None;
+  DragMaximizedWindow = NoMove;
   MiniwindowTitleBalloons = YES;
   WindowShortcut7Key = None;
   MoveToLastWorkspaceKey = None;
@@ -67,6 +73,7 @@
   CirculateRaise = NO;
   MenuDisabledColor = "#7f7f7f";
   LastWorkspaceKey = None;
+  IconTitleBack = "#000000";
   PixmapPath = (
     "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/radic/GNUstep/Library/WindowMaker/Backgrounds",
@@ -78,13 +85,14 @@
     "/usr/share/pixmaps"
   );
   MoveToWorkspace9Key = None;
-  IconTitleBack = "#000000";
   IconTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=16";
   LargeDisplayFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=64";
   MenuTitleColor = "#ffffff";
   WindowShortcut3Key = None;
+  EnableWorkspacePager = NO;
   WindowRelaunchKey = None;
   NoWindowOverDock = YES;
+  OmnipresentKey = None;
   HighlightTextColor = "#000000";
   WindowShortcut9Key = None;
   AutoArrangeIcons = YES;
@@ -98,7 +106,6 @@
   MoveToWorkspace1Key = None;
   ShowClipTitle = YES;
   WindowShortcut2Key = None;
-  MiniwindowApercuBalloons = YES;
   ToggleKbdModeKey = None;
   DoNotMakeAppIconsBounce = NO;
   MaximusKey = None;
@@ -110,13 +117,14 @@
   OpaqueMoveResizeKeyboard = NO;
   MenuTextColor = "#000000";
   NoWindowOverIcons = YES;
+  SnapCornerDetect = 10;
   HMaximizeKey = None;
   IconSlideSpeed = ultraslow;
   WindowShortcut5Key = None;
   SaveSessionOnExit = YES;
+  UTitleColor = "#000000";
   ViKeyMenus = YES;
   BounceAppIconsWhenUrgent = YES;
-  UTitleColor = "#000000";
   PTitleColor = "#ffffff";
   StickyIcons = YES;
   MoveToWorkspace4Key = None;

@@ -186,48 +186,7 @@
     Lock = No;
     Command = "-";
   };
-  Applications = (
-    {
-      Name = urxvt.URxvt;
-      Shaded = No;
-      Miniaturized = No;
-      Command = "urxvt -embed 25165833";
-      Geometry = "1299x664+0+0";
-      Hidden = No;
-      Workspace = Main;
-      ShortcutMask = 0;
-    },
-    {
-      Name = Chromium.Chromium;
-      Shaded = No;
-      Miniaturized = No;
-      Command = "/usr/lib/chromium/chromium";
-      Geometry = "1300x669+0+0";
-      Hidden = No;
-      Workspace = Main;
-      ShortcutMask = 0;
-    },
-    {
-      Name = skype.Skype;
-      Shaded = No;
-      Miniaturized = No;
-      Command = "/usr/lib32/skype/skype";
-      Geometry = "1300x669+0+0";
-      Hidden = No;
-      Workspace = Main;
-      ShortcutMask = 0;
-    },
-    {
-      Name = skype.Skype;
-      Shaded = No;
-      Miniaturized = Yes;
-      Command = "/usr/lib32/skype/skype";
-      Geometry = "350x502+0+0";
-      Hidden = No;
-      Workspace = Main;
-      ShortcutMask = 0;
-    }
-  );
+  Applications = ();
   Drawers = ();
   Workspaces = (
     {
