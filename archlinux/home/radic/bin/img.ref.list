@@ -1,0 +1,54 @@
+#!/usr/bin/env sh
+# =============================================================================
+# ~/bin/img.ref.list - Image References List
+# =============================================================================
+# Read files in the current (or specified) directory that contain links
+# to images and print exactly those lines that contain links to images.
+# =============================================================================
+
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+DIRECTORY=.
+
+# If no any parameters were passed to the script, reading files in the current
+# directory. Otherwise, reading files in the directory specified as the first
+# parameter.
+if [ $# -ne 0 ]; then
+    DIRECTORY=$1
+fi
+
+FILES=$(find $DIRECTORY -type f -print0 | xargs -0 grep -Ei "(\.gif|\.png|\.jpg|\.jpeg)" | cut -d: -f1 | uniq)
+
+echo "::============================================================================="
+
+# Main loop through all files.
+for file in $FILES; do
+    if [ $file != $0 ]; then
+        i=1
+
+        cat $file |
+
+        # Inner loop over the current file.
+        while read line; do
+            # Printing lines containing links to images.
+            if [[ $line == *.gif* || $line == *.png* || $line == *.jpg* || $line == *.jpeg* ]]; then
+                echo "$file  $i  $line"
+            fi
+
+            let i++
+        done
+    fi
+done
+
+echo "=============================================================================::"
+
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# =============================================================================
+# vim:set nu:et:ts=4:sw=4:
+# =============================================================================
