@@ -80,7 +80,9 @@ root ALL=(ALL) ALL
 
 ## ============================================================================
 radic ALL=(ALL) ALL
-radic ALL=(ALL) NOPASSWD: /usr/bin/poweroff, NOPASSWD: /usr/bin/reboot, NOPASSWD: /usr/bin/systemctl, NOPASSWD: /usr/bin/ip, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/pacman, NOPASSWD: /usr/bin/yaourt
+radic ALL=(ALL) NOPASSWD: /usr/bin/pm-suspend, NOPASSWD: /usr/bin/ip, NOPASSWD: /usr/bin/wpa_supplicant, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/eject, NOPASSWD: /usr/bin/systemctl, NOPASSWD: /usr/bin/pacman, NOPASSWD: /usr/bin/yaourt
+## ============================================================================
+yaroslav ALL=(ALL) NOPASSWD: /usr/bin/pm-suspend, NOPASSWD: /usr/bin/wpa_supplicant, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/eject
 ## ============================================================================
 
 ## Uncomment to allow members of group wheel to execute any command
