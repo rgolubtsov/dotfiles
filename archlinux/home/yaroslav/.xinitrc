@@ -43,7 +43,7 @@ PATH="$PATH:/usr/bin"
 # If you login from xdm, uncomment this to make error messages appear
 # in the console window.
 #
-# tail -f "/home/radic"/.xsession-errors > /dev/console &
+# tail -f "/home/yaroslav"/.xsession-errors > /dev/console &
 
 exec wmaker
 
