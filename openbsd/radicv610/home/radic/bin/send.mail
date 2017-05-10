@@ -1,0 +1,47 @@
+#!/usr/bin/env sh
+# =============================================================================
+# ~/bin/send.mail
+# =============================================================================
+
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+declare -r SEND_FILE=${HOME}/00/send.tmp.txt
+declare -r SIGN_FILE=${HOME}/00/signature.asc
+
+declare -r BODY="
++ First....1st
++ Second...2nd
++ Third....3rd
+
+
+-- \nKind regards,\nRadislav (Radic) Golubtsov"
+
+declare -r SUBJ="..:: 1st...2nd...3rd ::.."
+
+declare -r WHOM="Radislav Golubtsov <rgolubtsov@/mailbox-domain/>"
+
+echo "::============================================================================="
+rm   -vf ${SEND_FILE} ${SIGN_FILE}
+echo -e "${BODY}"   > ${SEND_FILE}
+echo "-------------------------------------------------------------------------------"
+echo "     To: ${WHOM}"
+echo "Subject: ${SUBJ}"
+echo "========"
+cat      ${SEND_FILE}
+echo "-------------------------------------------------------------------------------"
+gpg  -ab ${SEND_FILE}
+mv   -v  ${SEND_FILE}.asc ${SIGN_FILE}
+echo "-------------------------------------------------------------------------------"
+mail -A/account-name/ -a${SIGN_FILE} -q${SEND_FILE} -s"${SUBJ}" "${WHOM}"
+echo "=============================================================================::"
+
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# =============================================================================
+# vim:set nu:et:ts=4:sw=4:
+# =============================================================================
