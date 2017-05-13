@@ -2,6 +2,12 @@
 
 **radicv610.my.domain**: OpenBSD/amd64 (QEMU-VM)
 
+---
+
+**TODO:** Provide instructions on how to create an OpenBSD VM-guest using QEMU-KVM.
+
+---
+
 Launching OpenBSD guest on Arch Linux host:
 
 ```
