@@ -8,7 +8,7 @@
 
 ---
 
-Launching OpenBSD guest on Arch Linux host:
+Launching an OpenBSD guest on an Arch Linux host:
 
 ```
 $ qemu-system-x86_64 -m 2.0G -enable-kvm -show-cursor -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv610/radicv610openbsd61amd6400,format=raw,if=virtio
@@ -21,6 +21,20 @@ $ eval `ssh-agent -s` && ssh-add
 Agent pid <PID>
 Enter passphrase for /home/radic/.ssh/id_rsa:
 Identity added: /home/radic/.ssh/id_rsa (/home/radic/.ssh/id_rsa)
+```
+
+**Note:** `radicv610` below is the OpenBSD hostname assigned to its IP address `10.0.2.101` as the following:
+
+```
+$ cat /etc/hosts
+# /etc/hosts: static lookup table for host names
+
+#<ip-address>   <hostname.domain.org>   <hostname>
+127.0.0.1       localhost.localdomain   localhost       radicz580  # <== Arch Linux host (IPv4)
+::1             localhost.localdomain   localhost       radicz580  # <== Arch Linux host (IPv6)
+
+10.0.2.100                              localv144       radicv144  # <== Ubuntu Server VM
+10.0.2.101                              localv610       radicv610  # <== OpenBSD VM
 ```
 
 SSH-ing into this box:
