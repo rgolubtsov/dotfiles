@@ -48,14 +48,13 @@
     (Viewers, (Xpdf, EXEC, xpdf)),
     (Utilities, (NMap, EXEC, nmapfe)),
     (System, (top, EXEC, "xterm -e top")),
-    ("Chat and Talk", (Skype, EXEC, skype)),
     (
       "P2P Network",
       (ftp, EXEC, "xterm -e ftp"),
       (sftp, EXEC, "xterm -e sftp")
     )
   ),
-  (Run..., SHEXEC, "%A(Run, Type command:)"),
+  (Run..., EXEC, "%A(Run, Type command:)"),
   (
     Appearance,
     (
@@ -169,7 +168,7 @@
     ),
     (
       "Save Theme",
-      SHEXEC,
+      EXEC,
       "getstyle -p \"%a(Theme name, Name to save theme as)\""
     ),
     (

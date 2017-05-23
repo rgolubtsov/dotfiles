@@ -1,12 +1,16 @@
 {
-  soffice.Soffice = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
-  };
   firefox.Firefox = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
   };
-  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
+  soffice.Soffice = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
+  };
+  robomongo.robomongo = {
+    Icon = robomongo.png;
+  };
+  "qemu-system-x86_64.Qemu-system-x86_64" = {
+    AlwaysUserIcon = Yes;
+    Icon = mplayer.png;
   };
   gimp.Gimp = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
@@ -14,37 +18,43 @@
   xterm.XTerm = {
     Icon = GNUterm.tiff;
   };
-  chromium.Chromium = {
-    Icon = Mozilla.png;
+  "gimp-2.8.Gimp-2.8" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp-2.8.Gimp-2.8.xpm";
   };
   xcalc.XCalc = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/xcalc.XCalc.xpm";
   };
-  skype.Skype = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/skype.Skype.xpm";
-  };
   screenshot.Screenshot = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/screenshot.Screenshot.xpm";
-  };
-  "file-jpeg.File-jpeg" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
   };
   "gradient-flare.Gradient-flare" = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gradient-flare.Gradient-flare.xpm";
   };
-  zoiper.Zoiper = {
-    Icon = "zoiper-48.png";
+  "qtconfig-qt4.Qtconfig-qt4" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/qtconfig-qt4.Qtconfig-qt4.xpm";
   };
   urxvt.URxvt = {
     Icon = linuxterm.tiff;
   };
-  "qtconfig-qt4.Qtconfig-qt4" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/qtconfig-qt4.Qtconfig-qt4.xpm";
-  };
-  win.Xpdf = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/win.Xpdf.xpm";
+  zoiper.Zoiper = {
+    Icon = "zoiper-48.png";
   };
   groupLeader.WPrefs = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
+  };
+  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
+  };
+  chromium.Chromium = {
+    Icon = Mozilla.png;
+  };
+  skype.Skype = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/skype.Skype.xpm";
+  };
+  "file-jpeg.File-jpeg" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
+  };
+  win.Xpdf = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/win.Xpdf.xpm";
   };
 }
