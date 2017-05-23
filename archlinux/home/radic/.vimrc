@@ -4,8 +4,9 @@
 
 set    ls            =2
 set    nuw           =5
-hi     LineNr                        ctermfg=blue
-hi     StatusLine    ctermbg=gray    ctermfg=black
+hi     LineNr                          ctermfg=blue
+hi     StatusLine    ctermbg=yellow    ctermfg=black
+set    ruler
 syn    on
 
 " =============================================================================
