@@ -15,7 +15,6 @@
     (Development, (gdb, EXEC, "xterm -e gdb"), (xev, EXEC, "xterm -e xev")),
     (
       "Window Maker",
-      (Net, EXEC, "wmnet -d 100000 -Weth0"),
       ("Net Load", EXEC, wmnetload),
       ("Clock Mon", EXEC, wmclockmon),
       (Magnify, EXEC, wmagnify)

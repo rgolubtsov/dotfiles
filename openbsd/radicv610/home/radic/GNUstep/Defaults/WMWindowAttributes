@@ -1,53 +1,20 @@
 {
-  firefox.Firefox = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
-  };
-  soffice.Soffice = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
-  };
-  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
-  };
-  gimp.Gimp = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
-  };
-  chrome.Chrome = {
-    Icon = Mozilla.png;
-  };
-  chromium.Chromium = {
-    Icon = Mozilla.png;
-  };
   xterm.XTerm = {
     Icon = GNUterm.tiff;
   };
   xcalc.XCalc = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/xcalc.XCalc.xpm";
   };
-  skype.Skype = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/skype.Skype.xpm";
-  };
-  screenshot.Screenshot = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/screenshot.Screenshot.xpm";
-  };
-  "file-jpeg.File-jpeg" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
-  };
-  "gradient-flare.Gradient-flare" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gradient-flare.Gradient-flare.xpm";
-  };
-  "qtconfig-qt4.Qtconfig-qt4" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/qtconfig-qt4.Qtconfig-qt4.xpm";
-  };
   urxvt.URxvt = {
     Icon = defaultterm.tiff;
   };
-  zoiper.Zoiper = {
-    Icon = "zoiper-48.png";
-  };
-  win.Xpdf = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/win.Xpdf.xpm";
+  chrome.Chrome = {
+    Icon = Mozilla.png;
   };
   groupLeader.WPrefs = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
+  };
+  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
   };
 }
