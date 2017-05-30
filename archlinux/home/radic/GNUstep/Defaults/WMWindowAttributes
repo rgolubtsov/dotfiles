@@ -5,9 +5,6 @@
   soffice.Soffice = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
   };
-  robomongo.robomongo = {
-    Icon = robomongo.png;
-  };
   "qemu-system-x86_64.Qemu-system-x86_64" = {
     AlwaysUserIcon = Yes;
     Icon = mplayer.png;
@@ -36,9 +33,6 @@
   urxvt.URxvt = {
     Icon = linuxterm.tiff;
   };
-  zoiper.Zoiper = {
-    Icon = "zoiper-48.png";
-  };
   groupLeader.WPrefs = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
   };
@@ -47,9 +41,6 @@
   };
   chromium.Chromium = {
     Icon = Mozilla.png;
-  };
-  skype.Skype = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/skype.Skype.xpm";
   };
   "file-jpeg.File-jpeg" = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
