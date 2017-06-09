@@ -14,10 +14,10 @@ alias ls='ls --color=auto'
 #PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;91m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]][\[\e[0;92m\]\w\[\e[0m\]]\$ "
 
 # Regular user prompt.
-PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;96m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]][\[\e[0;92m\]\w\[\e[0m\]]\$ "
+PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;92m\]\w\[\e[0m\]]\$ "
 #PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;93m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]][\[\e[0;92m\]\w\[\e[0m\]]\$ "
 
-export PATH=$PATH:/home/radic/bin
+export PATH=$PATH:/data/data/com.termux/files/home/bin
 
 # =============================================================================
 # vim:set nu:et:ts=4:sw=4:
