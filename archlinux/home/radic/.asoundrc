@@ -1,0 +1,13 @@
+# ~/.asoundrc
+
+pcm.!default {
+    type hw
+    card 1
+}
+
+ctl.!default {
+    type hw
+    card 1
+}
+
+# vim:set nu:et:ts=4:sw=4:
