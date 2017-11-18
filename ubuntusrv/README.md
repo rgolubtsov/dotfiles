@@ -66,4 +66,15 @@ Last login: Thu May 25 23:55:20 2017 from 10.0.2.1
 Linux radicv144 4.4.0-78-generic #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
+Adding another disk partition (if needed), let's say of 60 Gigabytes:
+(1) In an Arch Linux host:
+
+```
+$ sudo qemu-img resize /opt/radicv144/radicv144ubuntu14044serveramd6400 +60G
+```
+
+(2) In an Ubuntu Server guest:
+
+**TODO:** Describe actions required.
+
 :cd:
