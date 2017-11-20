@@ -67,6 +67,7 @@ Linux radicv144 4.4.0-78-generic #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017 x86
 ```
 
 Adding another disk partition (if needed), let's say of 60 Gigabytes:
+
 (1) In an Arch Linux host:
 
 ```
@@ -75,6 +76,53 @@ $ sudo qemu-img resize /opt/radicv144/radicv144ubuntu14044serveramd6400 +60G
 
 (2) In an Ubuntu Server guest:
 
-**TODO:** Describe actions required.
+Run `sudo fdisk /dev/sda` and add a new partition, then reboot the VM.
+
+Check/watch this new change:
+
+```
+$ sudo fdisk -l /dev/sda
+Disk /dev/sda: 80 GiB, 85899345920 bytes, 167772160 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000000
+
+Device     Boot    Start       End   Sectors Size Id Type
+/dev/sda1  *        2048  41940991  41938944  20G 83 Linux
+/dev/sda2       41940992 167772159 125831168  60G 83 Linux
+```
+
+Format this new partition using `sudo mkfs.ext4 /dev/sda2` and mount it:
+
+```
+$ sudo mkdir /sda2
+$
+$ sudo mount /dev/sda2 /sda2
+```
+
+Check/watch this new partition is mounted:
+
+```
+$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+fd0      2:0    1    4K  0 disk
+sda      8:0    0   80G  0 disk
+├─sda1   8:1    0   20G  0 part /
+└─sda2   8:2    0   60G  0 part /sda2
+sr0     11:0    1 1024M  0 rom
+```
+
+It now can be used as usual, just like the root partition, for any kind of activities.
+
+The last thing have to do is to update the `/etc/fstab` configuration:
+
+```
+$ cat /etc/fstab
+/dev/sda1 /     ext4 errors=remount-ro 0 1
+/dev/sda2 /sda2 ext4 errors=remount-ro 0 1
+/swap     none  swap defaults          0 0
+```
 
 :cd:
