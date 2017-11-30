@@ -66,7 +66,7 @@ Last login: Thu May 25 23:55:20 2017 from 10.0.2.1
 Linux radicv144 4.4.0-78-generic #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-Adding another disk partition (if needed), let's say of 60 Gigabytes:
+**Adding another disk partition (if needed), let's say of 60 Gigabytes:**
 
 (1) In an Arch Linux host:
 
@@ -123,6 +123,53 @@ $ cat /etc/fstab
 /dev/sda1 /     ext4 errors=remount-ro 0 1
 /dev/sda2 /sda2 ext4 errors=remount-ro 0 1
 /swap     none  swap defaults          0 0
+```
+
+**Increasing (or adding initially) a swap file (if needed), let's say for 5 Gigabytes:**
+
+Deactivate an old one (if any):
+
+```
+$ sudo swapoff /swap
+```
+
+Reallocate it then (or create a new one):
+
+```
+$ sudo fallocate -l 5G /sda2/swap
+```
+
+If it resides on another disk partition and in order not to change the corresponding entry in the `/etc/fstab` configuration (see above), make a symlink to it:
+
+```
+$ cd /
+$
+$ sudo ln -sfnv /sda2/swap
+'./swap' -> '/sda2/swap'
+```
+
+(Re-)format and activate the swap file:
+
+```
+$ sudo mkswap /swap
+mkswap: /swap: warning: wiping old swap signature.
+Setting up swapspace version 1, size = 5 GiB (5368705024 bytes)
+no label, UUID=389fc137-73b5-4464-9bda-da173e5be8e5
+$
+$ sudo swapon /swap
+```
+
+Finally check/watch the swap file is utilized by the system:
+
+```
+$ ls -al /swap /sda2/swap
+-rw------- 1 root root 5368709120 Nov 30 16:40 /sda2/swap
+lrwxrwxrwx 1 root root         10 Nov 30 16:40 /swap -> /sda2/swap
+$
+$ free
+              total        used        free      shared  buff/cache   available
+Mem:        2564164       86000     1123916       10352     1354248     2273860
+Swap:       5242876           0     5242876
 ```
 
 :cd:
