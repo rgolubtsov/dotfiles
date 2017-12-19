@@ -1,13 +1,24 @@
 # ~/.asoundrc
 
+#pcm.!default {
+#    type hw
+#    card 1
+#}
+
+#ctl.!default {
+#    type hw
+#    card 1
+#}
+
 pcm.!default {
-    type hw
-    card 1
+    type pulse
+    device "alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo"
 }
 
 ctl.!default {
-    type hw
-    card 1
+    type pulse
+    sink "alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo"
+    source "alsa_input.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-mono"
 }
 
 # vim:set nu:et:ts=4:sw=4:
