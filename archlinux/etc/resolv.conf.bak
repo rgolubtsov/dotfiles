@@ -1,1 +1,4 @@
+# Resolver configuration file.
+# See resolv.conf(5) for details.
+
 nameserver 192.168.0.1

@@ -1,14 +1,10 @@
-# =============================================================================
-# /etc/hosts: static lookup table for host names
-# =============================================================================
+# Static table lookup for hostnames.
+# See hosts(5) for details.
 
-#<ip-address>	<hostname.domain.org>	<hostname>
 127.0.0.1	localhost.localdomain	localhost	radicz580
 ::1		localhost.localdomain	localhost	radicz580
 
 10.0.2.100				localv144	radicv144
 10.0.2.101				localv610	radicv610
 
-# =============================================================================
 # vim:set nu:et:ts=4:sw=4:
-# =============================================================================
