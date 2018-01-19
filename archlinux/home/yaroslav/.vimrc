@@ -1,13 +1,13 @@
-" =============================================================================
 " ~/.vimrc
-" =============================================================================
 
+set    ml               " <== Enabling modelines execution explicitly
+set    mls           =3 "     for Debian-based distros, BSDs, etc. ==
 set    ls            =2
 set    nuw           =5
-hi     LineNr                        ctermfg=blue
-hi     StatusLine    ctermbg=gray    ctermfg=black
+set    ru
+hi     StatusLine    ctermbg=yellow    ctermfg=black
+hi     LineNr                          ctermfg=blue
+set    list
 syn    on
 
-" =============================================================================
-" vim:set nu:et:ts=4:sw=4:
-" =============================================================================
+" vim:set nu et ts=4 sw=4:
