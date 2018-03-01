@@ -6,4 +6,4 @@ if [ "$SHLVL" = 1 ]; then
     [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
 fi
 
-# vim:set nu:et:ts=4:sw=4:
+# vim:set nu et ts=4 sw=4:
