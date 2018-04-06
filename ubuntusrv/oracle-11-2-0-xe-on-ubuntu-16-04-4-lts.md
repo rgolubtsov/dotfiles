@@ -172,6 +172,14 @@ Apr 06 17:38:26 <hostname> systemd[1]: Started SYSV: This is a program that is r
 
 ### Connect to the running Oracle Database instance (and get some data)
 
+Before executing any of Oracle Database utilities it needs to set appropriate environment variables:
+
+```
+$ . /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
+```
+
+Use the __SQL*Plus__ utility to connect to the database and perform any DBA operations on it:
+
 ```
 $ sqlplus sys as sysdba
 
