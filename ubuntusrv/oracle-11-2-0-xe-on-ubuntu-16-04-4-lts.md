@@ -172,7 +172,20 @@ Apr 06 17:38:26 <hostname> systemd[1]: Started SYSV: This is a program that is r
 
 ### Connect to the running Oracle Database instance (and get some data)
 
-Before executing any of Oracle Database utilities it needs to set appropriate environment variables:
+Before executing any of Oracle Database utilities it needs to add the current user to the `dba` group and set appropriate environment variables:
+
+```
+$ sudo usermod -a -G dba <username>
+```
+
+Do relogin and check the current user is now a DBA:
+
+```
+$ groups
+<usergroup> dba
+```
+
+Set Oracle Database-related environment variables:
 
 ```
 $ . /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
