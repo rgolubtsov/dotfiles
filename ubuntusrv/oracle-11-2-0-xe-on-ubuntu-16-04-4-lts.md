@@ -1,5 +1,7 @@
 # Oracle Database 11*g* XE (11.2.0) on Ubuntu Server 16.04.4 LTS (x86-64) Installation Instructions
 
+(For instructions on deinstalling Oracle Database 11*g* XE see [this document](https://github.com/rgolubtsov/dotfiles/blob/master/ubuntusrv/ubuntu-16-04-4-lts-wo-oracle-11-2-0-xe.md "Oracle Database 11g XE (11.2.0) on Ubuntu Server 16.04.4 LTS (x86-64) Deinstallation Instructions.").)
+
 ## (1) Download the Oracle Database 11.2.0 XE zipped RPM package
 
 It is freely downloadable from their OTN website. (**Note:** It needs to have an Oracle Account: sign in or sign up a new one.) The link is named as "**Oracle Database Express Edition 11g Release 2 for Linux x64**".
