@@ -52,7 +52,7 @@ $ sudo rm -Rf /etc/default/oracle-xe \
               ~/.rpmdb
 ```
 
-## (3) Remove the user who acts as a DBA from the `dba` group
+## (3) (Optional) Remove the user who acts as a DBA from the `dba` group
 
 ```
 $ sudo gpasswd -d <username> dba
@@ -66,7 +66,8 @@ $ groups
 <usergroup>
 ```
 
-(It previously was looked like the following:)
+-- It previously was looked like the following:
+
 ```
 $ groups
 <usergroup> dba
