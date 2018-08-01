@@ -2,7 +2,7 @@
 
 ## (1) Download the HP-UX 11i Java Development Kit (JDK) `.depot` bundle (package)
 
-It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let's for 8.0.x &ndash; from the JDK/JRE 8.0.x Downloads and Documentation page. (**Note:** It needs to have an HPE Passport (account): sign in or sign up a new one.) The link is named as "**Version 8.0.14 &ndash; June 2018 (includes Oracle update 8u172)**".
+It is freely downloadable from the Software Depot homepage of the Hewlett Packard Enterprise (HPE) website. Actually the bundle can be downloaded from the HP-UX 11i Java Technology Software section of that homepage. They are provided each for various Java versions. Pick it up let's for 8.0.x &ndash; from the JDK/JRE 8.0.x Downloads and Documentation page. (**Note:** It needs to have an HPE Passport (account): sign in or sign up for a new one.) The link is named as "**Version 8.0.14 &ndash; June 2018 (includes Oracle update 8u172)**".
 
 Transfer this bundle to a Linux box:
 
@@ -13,7 +13,7 @@ Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot                   
 
 ## (2) Unpack the `.depot` bundle
 
-Since in fact it is just an ordinary tar archive, it can be unpacked using the tar archiver:
+Since in fact it is just an ordinary tar archive, it can be unpacked using the `tar` archiver:
 
 ```
 $ tar -xvf Itanium_JDK_8.0.14_June_2018_Z7550-63485_java8_18014_ia.depot
@@ -131,7 +131,7 @@ $ mv -v   Jre80/JRE80/* . && \
 
 ## (5) Invoke the `gunzip` magic against all the JRE files
 
-In fact all the resulting JRE files are stored compressed as gzipped:
+In fact all the resulting JRE files are stored compressed as `gzip`ped:
 
 ```
 $ file * bin/java
@@ -151,7 +151,7 @@ It needs to `gunzip` each of them, but first give each file the `.gz` extension.
 $ for f in `find . -type f`; do mv -v ${f} ${f}.gz; gunzip ${f}.gz; done
 ```
 
-Check them out again and ensure the JRE files are now ready for including them to form a new package (archive):
+Check them out again and ensure the JRE files are now ready for including them to form out a new package (archive):
 
 ```
 $ file * bin/java

@@ -4,7 +4,7 @@
 
 ## (1) Download the Oracle Database 11.2.0 XE zipped RPM package
 
-It is freely downloadable from their OTN website. (**Note:** It needs to have an Oracle Account: sign in or sign up a new one.) The link is named as "**Oracle Database Express Edition 11g Release 2 for Linux x64**".
+It is freely downloadable from their OTN website. (**Note:** It needs to have an Oracle Account: sign in or sign up for a new one.) The link is named as "**Oracle Database Express Edition 11g Release 2 for Linux x64**".
 
 Transfer this package to the Ubuntu Server box:
 
@@ -15,7 +15,7 @@ oracle-xe-11.2.0-1.0.x86_64.rpm.zip                   100%  301MB   5.4MB/s   00
 
 ## (2) Make the Oracle Database 11.2.0 XE DEB (Debian) package
 
-Unzip the RPM package:
+Do `unzip` the RPM package:
 
 ```
 $ unzip oracle-xe-11.2.0-1.0.x86_64.rpm.zip
@@ -172,15 +172,15 @@ Apr 06 17:38:19 <hostname> su[10129]: pam_unix(su:session): session opened for u
 Apr 06 17:38:26 <hostname> systemd[1]: Started SYSV: This is a program that is responsible for taking care of.
 ```
 
-### Connect to the running Oracle Database instance (and get some data)
+### Connect to the running Oracle Database instance (and get data)
 
-(Optional) Before executing any of Oracle Database utilities it needs to add the current user to the `dba` group and set appropriate environment variables:
+**(Optional)** Before executing any of Oracle Database utilities it needs to add the current user to the `dba` group and set appropriate environment variables:
 
 ```
 $ sudo usermod -a -G dba <username>
 ```
 
-(Optional) Do relogin and check the current user is now a DBA:
+**(Optional)** Do relogin and check the current user is now a DBA:
 
 ```
 $ groups

@@ -66,7 +66,7 @@ $ groups
 <usergroup>
 ```
 
--- It previously was looked like the following:
+&ndash; It previously was looked like the following:
 
 ```
 $ groups
@@ -75,4 +75,4 @@ $ groups
 
 ---
 
-Happy deliverance from Oracle in Ubuntu ! :+1: -- Because **PostgreSQL** will rule the Universe ! :blue_heart:
+Happy deliverance from Oracle in Ubuntu ! :+1: &ndash; Because **PostgreSQL** will rule the Universe ! :blue_heart:
