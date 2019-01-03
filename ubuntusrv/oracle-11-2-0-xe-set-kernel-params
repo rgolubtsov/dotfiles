@@ -11,7 +11,7 @@
 # See the "ubuntusrv/oracle-11-2-0-xe-on-ubuntu-16-04-4-lts.md" document
 # for how to and when to run it.
 # =============================================================================
-# Written by Radislav (Radicchio) Golubtsov, 2018
+# Written by Radislav (Radicchio) Golubtsov, 2018-2019
 #
 
 # Kernel parameters' defaults in Ubuntu Server 16.04.4 LTS (x86-64):
