@@ -7,7 +7,7 @@
 
 **Configuring the network to assign and utilize a static IP address:**
 
-Stopping the DHCP client (`dhcpcd`):
+Stop a DHCP client (`dhcpcd`):
 
 ```
 $ sudo systemctl stop dhcpcd -l
@@ -23,7 +23,7 @@ $ sudo systemctl status dhcpcd -l
 <hostname> systemd: Stopped dhcpcd on all interfaces.
 ```
 
-Setting the DNS server IP address as on the router:
+Set a DNS server IP address as on the router:
 
 ```
 $ sudo su -
@@ -36,7 +36,7 @@ $ cat /etc/resolv.conf
 nameserver 192.168.100.1
 ```
 
-Assigning the static IP address and adding the default route:
+Assign a static IP address and add a default route:
 
 ```
 $ sudo ip addr add 192.168.100.2/24 broadcast 192.168.100.255 dev wlp2s0
@@ -47,20 +47,20 @@ default via 192.168.100.1 dev wlp2s0 linkdown
 192.168.100.0/24 dev wlp2s0 proto kernel scope link src 192.168.100.2 linkdown
 ```
 
-Starting up the WPA supplicant to acquire carrier (when using Wi-Fi):
+Start up WPA supplicant to acquire carrier (when using Wi-Fi):
 
 ```
 $ sudo wpa_supplicant -B -iwlp2s0 -c/etc/wpa_supplicant.conf
 Successfully initialized wpa_supplicant
 ```
 
-Disabling unused interface(s):
+Disable unused interface(s):
 
 ```
 $ sudo ip link set enp4s0 down
 ```
 
-Checking out the connection:
+Check/watch the connection is set up:
 
 ```
 $ ip route
