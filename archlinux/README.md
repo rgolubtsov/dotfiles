@@ -1,0 +1,82 @@
+# Arch Linux / Arch Linux 32 boxes
+
+**radicz580**: Arch Linux (x86-64)
+**radicx101**: Arch Linux 32 (i686)
+
+---
+
+**Configuring the network to assign and utilize a static IP address:**
+
+Stopping the DHCP client (`dhcpcd`):
+
+```
+$ sudo systemctl stop dhcpcd -l
+$ sudo systemctl status dhcpcd -l
+● dhcpcd.service - dhcpcd on all interfaces
+   Loaded: loaded (/usr/lib/systemd/system/dhcpcd.service; enabled; vendor preset: disabled)
+   Active: inactive (dead) since ...
+...
+<hostname> dhcpcd: wlp2s0: removing interface
+<hostname> dhcpcd: enp4s0: removing interface
+<hostname> dhcpcd: dhcpcd exited
+<hostname> systemd: dhcpcd.service: Succeeded.
+<hostname> systemd: Stopped dhcpcd on all interfaces.
+```
+
+Setting the DNS server IP address as on the router:
+
+```
+$ sudo su -
+#
+# echo 'nameserver 192.168.100.1' > /etc/resolv.conf
+#
+# logout
+$
+$ cat /etc/resolv.conf
+nameserver 192.168.100.1
+```
+
+Assigning the static IP address and adding the default route:
+
+```
+$ sudo ip addr add 192.168.100.2/24 broadcast 192.168.100.255 dev wlp2s0
+$ sudo ip route add default via 192.168.100.1
+$
+$ ip route
+default via 192.168.100.1 dev wlp2s0 linkdown
+192.168.100.0/24 dev wlp2s0 proto kernel scope link src 192.168.100.2 linkdown
+```
+
+Starting up the WPA supplicant to acquire carrier (when using Wi-Fi):
+
+```
+$ sudo wpa_supplicant -B -iwlp2s0 -c/etc/wpa_supplicant.conf
+Successfully initialized wpa_supplicant
+```
+
+Disabling unused interface(s):
+
+```
+$ sudo ip link set enp4s0 down
+```
+
+Checking out the connection:
+
+```
+$ ip route
+default via 192.168.100.1 dev wlp2s0
+192.168.100.0/24 dev wlp2s0 proto kernel scope link src 192.168.100.2
+$
+$ ping -c4 archlinux.org
+PING archlinux.org (138.201.81.199) 56(84) bytes of data.
+64 bytes from apollo.archlinux.org (138.201.81.199): icmp_seq=1 ttl=53 time=38.3 ms
+64 bytes from apollo.archlinux.org (138.201.81.199): icmp_seq=2 ttl=53 time=37.8 ms
+64 bytes from apollo.archlinux.org (138.201.81.199): icmp_seq=3 ttl=53 time=38.3 ms
+64 bytes from apollo.archlinux.org (138.201.81.199): icmp_seq=4 ttl=53 time=38.7 ms
+
+--- archlinux.org ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 8ms
+rtt min/avg/max/mdev = 37.805/38.271/38.711/0.400 ms
+```
+
+:cd:
