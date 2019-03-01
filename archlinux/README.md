@@ -1,7 +1,7 @@
 # Arch Linux / Arch Linux 32 boxes
 
-**radicz580**: Arch Linux (x86-64)
-<br />**radicx101**: Arch Linux 32 (i686)
+* **radicz580**: Arch Linux (x86-64)
+* **radicx101**: Arch Linux 32 (i686)
 
 ---
 
@@ -78,5 +78,3 @@ PING archlinux.org (138.201.81.199) 56(84) bytes of data.
 4 packets transmitted, 4 received, 0% packet loss, time 8ms
 rtt min/avg/max/mdev = 37.805/38.271/38.711/0.400 ms
 ```
-
-:cd:

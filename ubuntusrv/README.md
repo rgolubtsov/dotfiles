@@ -1,10 +1,6 @@
 # Ubuntu Server (VM-)boxes
 
-**radicv144**: Ubuntu Server/amd64 (QEMU-VM)
-
----
-
-**TODO:** Provide instructions on how to create an Ubuntu Server VM-guest using QEMU-KVM.
+* **radicv144**: Ubuntu Server/amd64 (QEMU-VM)
 
 ---
 
@@ -171,5 +167,3 @@ $ free
 Mem:        2564164       86000     1123916       10352     1354248     2273860
 Swap:       5242876           0     5242876
 ```
-
-:cd:

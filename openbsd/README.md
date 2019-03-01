@@ -1,10 +1,6 @@
 # OpenBSD (VM-)boxes
 
-**radicv610.my.domain**: OpenBSD/amd64 (QEMU-VM)
-
----
-
-**TODO:** Provide instructions on how to create an OpenBSD VM-guest using QEMU-KVM.
+* **radicv610.my.domain**: OpenBSD/amd64 (QEMU-VM)
 
 ---
 
@@ -152,5 +148,3 @@ OpenBSD radicv610.my.domain 6.1 GENERIC.MP#20 amd64
 ---
 
 **Semi-OFFTOP:** Some useful tips from [Eric Radman's blog](http://eradman.com "Eric Radman : A Journal"): [An OpenBSD Workstation](http://eradman.com/posts/openbsd-workstation.html "2013-07-05 : An OpenBSD Workstation (Last updated on March 28, 2017)").
-
-:cd:
