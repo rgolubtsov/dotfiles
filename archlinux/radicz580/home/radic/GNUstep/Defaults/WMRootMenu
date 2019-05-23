@@ -10,7 +10,7 @@
       (Lynx, EXEC, "xterm -e lynx")
     ),
     (Mathematics, (bc, EXEC, "xterm -e bc"), (XCalc, EXEC, xcalc)),
-    (Graphics, (GIMP, EXEC, gimp)),
+    (Graphics, (GIMP, EXEC, gimp), ("ImageMagick Display", EXEC, display)),
     (Multimedia, (xine, EXEC, xine)),
     (
       Editors,
@@ -54,7 +54,7 @@
       (sftp, EXEC, "xterm -e sftp")
     )
   ),
-  (Run..., EXEC, "%A(Run, Type command:)"),
+  (Run..., SHEXEC, "%A(Run, Type command:)"),
   (
     Appearance,
     (
@@ -168,7 +168,7 @@
     ),
     (
       "Save Theme",
-      EXEC,
+      SHEXEC,
       "getstyle -p \"%a(Theme name, Name to save theme as)\""
     ),
     (

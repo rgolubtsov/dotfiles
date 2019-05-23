@@ -66,22 +66,11 @@
       },
       {
         Forced = No;
-        Name = wmnetload.DockApp;
-        DropCommand = "wmnetload %d";
-        BuggyApplication = No;
-        AutoLaunch = Yes;
-        Position = "0,6";
-        Lock = Yes;
-        PasteCommand = "wmnetload %s";
-        Command = "wmnetload -i enp0s20u2";
-      },
-      {
-        Forced = No;
         Name = wmsystemtray0.wmsystemtray;
         DropCommand = "wmsystemtray %d";
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,7";
+        Position = "0,6";
         Lock = Yes;
         PasteCommand = "wmsystemtray %s";
         Command = wmsystemtray;
@@ -152,22 +141,11 @@
       },
       {
         Forced = No;
-        Name = wmnetload.DockApp;
-        DropCommand = "wmnetload %d";
-        BuggyApplication = No;
-        AutoLaunch = Yes;
-        Position = "0,6";
-        Lock = Yes;
-        PasteCommand = "wmnetload %s";
-        Command = "wmnetload -i enp0s20u2";
-      },
-      {
-        Forced = No;
         Name = wmsystemtray0.wmsystemtray;
         DropCommand = "wmsystemtray %d";
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,7";
+        Position = "0,6";
         Lock = Yes;
         PasteCommand = "wmsystemtray %s";
         Command = wmsystemtray;

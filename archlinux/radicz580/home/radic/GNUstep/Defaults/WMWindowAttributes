@@ -5,6 +5,9 @@
   soffice.Soffice = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
   };
+  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
+  };
   "qemu-system-x86_64.Qemu-system-x86_64" = {
     AlwaysUserIcon = Yes;
     Icon = mplayer.png;
@@ -15,6 +18,9 @@
   xterm.XTerm = {
     Icon = GNUterm.tiff;
   };
+  chromium.Chromium = {
+    Icon = Mozilla.png;
+  };
   "gimp-2.8.Gimp-2.8" = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp-2.8.Gimp-2.8.xpm";
   };
@@ -23,6 +29,9 @@
   };
   screenshot.Screenshot = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/screenshot.Screenshot.xpm";
+  };
+  "file-jpeg.File-jpeg" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
   };
   "gradient-flare.Gradient-flare" = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gradient-flare.Gradient-flare.xpm";
@@ -33,19 +42,13 @@
   urxvt.URxvt = {
     Icon = linuxterm.tiff;
   };
-  groupLeader.WPrefs = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
-  };
-  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
-  };
-  chromium.Chromium = {
-    Icon = Mozilla.png;
-  };
-  "file-jpeg.File-jpeg" = {
-    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
+  skypeforlinux.Skypeforlinux = {
+    Icon = skypeforlinux.png;
   };
   win.Xpdf = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/win.Xpdf.xpm";
+  };
+  groupLeader.WPrefs = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
   };
 }
