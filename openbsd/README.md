@@ -145,6 +145,8 @@ known fix for it exists, include that as well.
 OpenBSD radicv610.my.domain 6.1 GENERIC.MP#20 amd64
 ```
 
+Step by step instructions on how to upgrade OpenBSD from the 6.3 release to the 6.5 release can be found [here](http://rgolubtsov.github.io/data/docs/openbsd/upgrade-63-to-65 "Upgrade OpenBSD 6.3 to 6.5").
+
 ---
 
 **Semi-OFFTOP:** Some useful tips from [Eric Radman's blog](http://eradman.com "Eric Radman : A Journal"): [An OpenBSD Workstation](http://eradman.com/posts/openbsd-workstation.html "2013-07-05 : An OpenBSD Workstation (Last updated on March 28, 2017)").
