@@ -1,6 +1,1 @@
-# Resolver configuration file.
-# See resolv.conf(5) for details.
-
-domain gomel.exadel.by
-nameserver 10.131.2.2
-nameserver 10.131.2.3
+nameserver 192.168.100.1
