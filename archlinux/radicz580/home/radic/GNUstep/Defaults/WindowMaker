@@ -1,12 +1,9 @@
 {
   FrameBorderColor = "#000000";
   FTitleColor = "#ffffff";
-  LTCMaximizeKey = None;
   CycleIgnoreMinimized = YES;
   MenuDisabledColor = "#7f7f7f";
-  LastWorkspaceKey = None;
   IconTitleBack = "#000000";
-  MoveToWorkspace9Key = None;
   PixmapPath = (
     "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/radic/GNUstep/Library/WindowMaker/Backgrounds",
@@ -15,102 +12,37 @@
     "/usr/share/WindowMaker/Backgrounds",
     "/usr/share/pixmaps"
   );
-  MoveToPrevWorkspaceLayerKey = None;
-  ClipTitleFont = "DejaVu Sans:slant=0:weight=200:width=87:pixelsize=13";
-  MiniwindowPreviewBalloons = NO;
-  MouseForwardButtonAction = None;
-  MoveToWorkspace7Key = None;
-  IconTitleFont = "DejaVu Sans:slant=0:weight=200:width=87:pixelsize=13";
-  LargeDisplayFont = "DejaVu Sans:slant=0:weight=200:width=87:pixelsize=32";
-  RBCMaximizeKey = None;
-  WindowShortcut10Key = None;
+  ToggleKbdModeKey = None;
+  DragMaximizedWindow = NoMove;
+  ClipTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  MiniwindowTitleBalloons = YES;
+  IconTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  LargeDisplayFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=32";
+  RaiseAppIconsWhenBouncing = YES;
+  WindowPlacement = center;
   IconTitleColor = "#ffffff";
-  MoveToWorkspace2Key = None;
-  MouseWheelTiltAction = None;
+  SingleClickLaunch = YES;
+  Attraction = YES;
+  MenuTextColor = "#000000";
+  AntialiasedText = YES;
   MenuTitleColor = "#ffffff";
-  WindowShortcut3Key = None;
-  MenuTitleFont = "DejaVu Sans:slant=0:weight=200:width=87:pixelsize=15";
-  WindowRelaunchKey = None;
-  EnableWorkspacePager = NO;
-  WindowShortcut4Key = None;
+  MenuTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
   ShadeSpeed = ultraslow;
+  MenuTextFont = "Liberation Sans:slant=0:weight=80:width=100:pixelsize=13";
   NoWindowOverDock = YES;
-  OmnipresentKey = None;
-  LBCMaximizeKey = None;
+  NoWindowOverIcons = YES;
   HighlightTextColor = "#000000";
-  SnapEdgeDetect = 1;
   MenuScrollSpeed = slow;
-  WindowShortcut9Key = None;
   HelpBalloons = YES;
-  WindowSnapping = NO;
-  KeepAtBottomKey = None;
-  MoveResizeKey = None;
-  KeepOnTopKey = None;
   AutoArrangeIcons = YES;
   AppIconBalloons = YES;
   ClipTitleColor = "#000000";
-  MoveHalfMaximizedWindowsBetweenScreens = NO;
   FrameFocusedBorderColor = "#000000";
-  WindowTitleFont = "DejaVu Sans:slant=0:weight=200:width=87:pixelsize=15";
-  MoveToWorkspace8Key = None;
-  RunKey = None;
-  WindowPlaceOrigin = (0, 0);
-  LHMaximizeKey = None;
-  MoveToPrevWorkspaceKey = None;
-  MoveToWorkspace6Key = None;
-  MoveToWorkspace10Key = None;
-  KbdModeLock = NO;
-  BHMaximizeKey = None;
-  MouseBackwardButtonAction = None;
-  CycleActiveHeadOnly = YES;
-  MoveToWorkspace1Key = None;
-  IgnoreGtkHints = NO;
-  ShowClipTitle = NO;
-  WindowShortcut1Key = None;
-  RHMaximizeKey = None;
-  FrameSelectedBorderColor = "#ffffff";
-  THMaximizeKey = None;
-  AlternativeHalfMaximized = NO;
-  MoveToNextWorkspaceLayerKey = None;
-  WindowShortcut2Key = None;
-  WorkspaceMapKey = None;
-  ToggleKbdModeKey = None;
-  DragMaximizedWindow = NoMove;
-  DoNotMakeAppIconsBounce = NO;
-  MiniwindowTitleBalloons = YES;
-  MaximusKey = None;
-  WindowShortcut7Key = None;
-  OpaqueResize = NO;
-  WindowPlacement = center;
-  RaiseAppIconsWhenBouncing = YES;
-  ResizeIncrement = 0;
-  WindowShortcut8Key = None;
-  OpaqueMoveResizeKeyboard = NO;
-  MoveToLastWorkspaceKey = None;
-  GroupNextKey = None;
-  MenuTextColor = "#000000";
-  Attraction = YES;
-  SingleClickLaunch = YES;
-  AntialiasedText = YES;
-  DisableBlinking = NO;
-  MoveToWorkspace5Key = None;
-  WorkspaceNameDisplayPosition = center;
-  MenuTextFont = "DejaVu Sans:slant=0:weight=80:width=87:pixelsize=13";
-  NoWindowOverIcons = YES;
-  ScreenSwitchKey = None;
-  SnapCornerDetect = 10;
-  MoveToNextWorkspaceKey = None;
-  HMaximizeKey = None;
-  SnapToTopMaximizesFullscreen = NO;
   HighlightColor = "#ffffff";
-  GroupPrevKey = None;
-  PointerWithHalfMaxWindows = NO;
-  MoveToWorkspace3Key = None;
-  MinimizeAllKey = None;
+  WindowTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  WindowPlaceOrigin = (0, 0);
   CClipTitleColor = "#616161";
   IconSlideSpeed = ultraslow;
-  WindowShortcut5Key = None;
-  HideOthersKey = None;
   IconPath = (
     "/home/radic/GNUstep/Library/Icons",
     "/usr/share/WindowMaker/Icons",
@@ -120,15 +52,13 @@
     "/usr/share/icons",
     "/usr/share/pixmaps"
   );
-  WindowShortcut6Key = None;
+  KbdModeLock = NO;
+  CycleActiveHeadOnly = YES;
   SaveSessionOnExit = YES;
-  ViKeyMenus = YES;
-  BounceAppIconsWhenUrgent = YES;
   UTitleColor = "#000000";
-  CirculateRaise = NO;
-  HighlightActiveApp = YES;
+  ViKeyMenus = YES;
   PTitleColor = "#ffffff";
   StickyIcons = YES;
-  MoveToWorkspace4Key = None;
-  RTCMaximizeKey = None;
+  ShowClipTitle = NO;
+  FrameSelectedBorderColor = "#ffffff";
 }
