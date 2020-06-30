@@ -46,7 +46,6 @@
     ),
     (Sound, ("ALSA mixer", EXEC, "xterm -e alsamixer")),
     (Viewers, (Xpdf, EXEC, xpdf)),
-    (Utilities, (NMap, EXEC, nmapfe)),
     (System, (top, EXEC, "xterm -e top")),
     (
       "P2P Network",
