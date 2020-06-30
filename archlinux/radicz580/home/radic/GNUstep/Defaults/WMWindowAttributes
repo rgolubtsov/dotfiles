@@ -10,7 +10,7 @@
   };
   "qemu-system-x86_64.Qemu-system-x86_64" = {
     AlwaysUserIcon = Yes;
-    Icon = mplayer.png;
+    Icon = defaultterm.tiff;
   };
   gimp.Gimp = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
