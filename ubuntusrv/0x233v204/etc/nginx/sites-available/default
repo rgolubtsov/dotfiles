@@ -38,10 +38,9 @@ server {
     #
     # include snippets/snakeoil.conf;
 
-#   server_name $host;
     server_name xn--90a8ad3b.xn--90ais;
 
-    root /var/www/i-bteu-typo310/public;
+    root /var/www/i-bteu-joomla3;
 
     index index.php index.html;
 
@@ -53,13 +52,12 @@ server {
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
 
-#       fastcgi_param SERVER_NAME $host;
         fastcgi_param SERVER_NAME xn--90a8ad3b.xn--90ais;
 
         fastcgi_pass unix:/var/run/php/php-fpm.sock;
 
-        add_header X-log-1 "=== $host ===";
-        add_header X-log-2 "=== $hostname ===";
+        add_header x-host       "=== $host ===";
+        add_header x-powered-by "=== Joomla! 3 ===";
     }
 }
 
@@ -83,12 +81,12 @@ server {
 #}
 
 server {
-    listen 8080;
-    listen [::]:8080;
+    listen 80;
+    listen [::]:80;
 
-    server_name $host;
+    server_name typo3.xn--90a8ad3b.xn--90ais;
 
-    root /var/www/i-bteu-typo3/public;
+    root /var/www/i-bteu-typo310/public;
 
     index index.php index.html;
 
@@ -100,12 +98,12 @@ server {
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
 
-        fastcgi_param SERVER_NAME $host;
+        fastcgi_param SERVER_NAME typo3.xn--90a8ad3b.xn--90ais;
 
         fastcgi_pass unix:/var/run/php/php-fpm.sock;
 
-        add_header X-log-1 "=== $host ===";
-        add_header X-log-2 "=== $hostname ===";
+        add_header x-host       "=== $host ===";
+        add_header x-powered-by "=== TYPO3 10 ===";
     }
 }
 
