@@ -59,6 +59,8 @@ server {
         add_header x-host       "=== $host ===";
         add_header x-powered-by "=== Joomla! 3 ===";
     }
+
+    client_max_body_size 50m;
 }
 
 # Virtual Host configuration for example.com
