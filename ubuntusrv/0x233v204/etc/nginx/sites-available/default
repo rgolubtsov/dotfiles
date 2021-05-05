@@ -56,6 +56,8 @@ server {
 
         fastcgi_pass unix:/var/run/php/php-fpm.sock;
 
+        fastcgi_read_timeout 240s;
+
         add_header x-host       "=== $host ===";
         add_header x-powered-by "=== Joomla! 3 ===";
     }
