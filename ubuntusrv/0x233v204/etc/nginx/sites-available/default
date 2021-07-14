@@ -114,6 +114,36 @@ server {
     listen 80;
     listen [::]:80;
 
+    server_name results.xn--90a8ad3b.xn--90ais;
+
+    root /var/www/stage-1-entrance-exams-results/public;
+
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name stage-1.xn--90a8ad3b.xn--90ais;
+
+    root /var/www/stage-1-admission-decree/public;
+
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+
     server_name typo3.xn--90a8ad3b.xn--90ais;
 
     root /var/www/i-bteu-typo310/public;
