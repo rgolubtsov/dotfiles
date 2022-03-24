@@ -7,7 +7,7 @@
 Launching an Ubuntu Server guest on an Arch Linux host:
 
 ```
-$ qemu-system-x86_64 -m 2.0G -enable-kvm -cpu host -smp 2 -net nic,model=virtio -net vde -drive file=/opt/radicv144/radicv144ubuntu14044serveramd6400,format=raw
+$ qemu-system-x86_64 -m 2G -enable-kvm -cpu host -smp 2 -net nic,model=virtio -net vde -drive file=/opt/radicv144/radicv144ubuntu14044serveramd6400,format=raw
 ```
 
 Adding `ssh-agent`:
