@@ -1,6 +1,6 @@
 # Ubuntu Server (VM-)boxes
 
-* **radicv144**: Ubuntu Server/amd64 (QEMU-VM)
+* **radicv144**: Ubuntu Server LTS x86-64 (QEMU-KVM)
 
 ---
 
@@ -37,29 +37,34 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radic@radicv144
-Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-78-generic x86_64)
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-109-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Fri May 26 00:43:20 AEST 2017
+  System information as of Fri 29 Apr 2022 09:20:40 PM AEST
 
-  System load:  0.06               Processes:           109
-  Usage of /:   28.7% of 19.56GB   Users logged in:     1
-  Memory usage: 27%                IP address for eth0: 10.0.2.100
-  Swap usage:   0%
+  System load:  0.0                Processes:                126
+  Usage of /:   18.6% of 78.62GB   Users logged in:          1
+  Memory usage: 23%                IPv4 address for docker0: 172.17.0.1
+  Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
 
-0 packages can be updated.
-0 updates are security updates.
+   https://ubuntu.com/blog/microk8s-memory-optimisation
 
-Last login: Thu May 25 23:55:20 2017 from 10.0.2.1
-[00:43:21][radic][radicv144][~]$
-[00:43:22][radic][radicv144][~]$ uname -a
-Linux radicv144 4.4.0-78-generic #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+0 updates can be applied immediately.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+Last login: Fri Apr 29 21:20:33 2022 from 10.0.2.1
+$
+$ uname -a
+Linux radicv144 5.4.0-109-generic #123-Ubuntu SMP Fri Apr 8 09:10:54 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
