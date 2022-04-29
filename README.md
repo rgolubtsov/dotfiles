@@ -5,12 +5,12 @@
 ---
 
 'Cause I'm just holding on for tonight
-Oh, I'm just holding on for tonight
-On for tonight, on for tonight
-'Cause I'm just holding on for tonight
-'Cause I'm just holding on for tonight
-Oh, I'm just holding on for tonight
-On for tonight, on for tonight:
+<br />Oh, I'm just holding on for tonight
+<br />On for tonight, on for tonight
+<br />'Cause I'm just holding on for tonight
+<br />'Cause I'm just holding on for tonight
+<br />Oh, I'm just holding on for tonight
+<br />On for tonight, on for tonight:
 
 ```
 $ cat .vimrc
