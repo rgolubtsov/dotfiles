@@ -1,6 +1,6 @@
 # OpenBSD (VM-)boxes
 
-* **radicv610.my.domain**: OpenBSD/amd64 (QEMU-VM)
+* **radicv610.my.domain**: OpenBSD/amd64 (QEMU-KVM)
 
 ---
 
