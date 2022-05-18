@@ -37,23 +37,19 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radic@radicv144
-Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-109-generic x86_64)
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-110-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Fri 29 Apr 2022 09:20:40 PM AEST
+  System information as of Wed 18 May 2022 11:10:30 PM AEST
 
-  System load:  0.0                Processes:                126
-  Usage of /:   18.6% of 78.62GB   Users logged in:          1
-  Memory usage: 23%                IPv4 address for docker0: 172.17.0.1
+  System load:  0.07               Processes:                123
+  Usage of /:   18.5% of 78.62GB   Users logged in:          1
+  Memory usage: 18%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
- * Super-optimized for small spaces - read how we shrank the memory
-   footprint of MicroK8s to make it the smallest full K8s around.
-
-   https://ubuntu.com/blog/microk8s-memory-optimisation
 
 0 updates can be applied immediately.
 
@@ -61,10 +57,10 @@ Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 
 
-Last login: Fri Apr 29 21:20:33 2022 from 10.0.2.1
+Last login: Wed May 18 23:10:20 2022 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.4.0-109-generic #123-Ubuntu SMP Fri Apr 8 09:10:54 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 5.4.0-110-generic #124-Ubuntu SMP Thu Apr 14 19:46:19 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
