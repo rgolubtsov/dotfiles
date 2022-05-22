@@ -76,29 +76,28 @@
 ##
 ## User privilege specification
 ##
-root ALL=(ALL) ALL
+root ALL=(ALL:ALL) ALL
 
 ## ============================================================================
-radic ALL=(ALL) ALL
-radic ALL=(ALL) NOPASSWD: /usr/bin/pm-suspend, NOPASSWD: /usr/bin/ip, NOPASSWD: /usr/bin/wpa_supplicant, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/eject, NOPASSWD: /usr/bin/systemctl, NOPASSWD: /usr/bin/pacman, NOPASSWD: /usr/bin/yaourt
+radic ALL=(ALL:ALL) ALL
+radic ALL=(ALL:ALL) NOPASSWD: /usr/bin/pm-suspend, NOPASSWD: /usr/bin/ip, NOPASSWD: /usr/bin/wpa_supplicant, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/eject, NOPASSWD: /usr/bin/systemctl, NOPASSWD: /usr/bin/pacman
 ## ============================================================================
-yaroslav ALL=(ALL) NOPASSWD: /usr/bin/pm-suspend, NOPASSWD: /usr/bin/wpa_supplicant, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/eject
+yaroslav ALL=(ALL:ALL) NOPASSWD: /usr/bin/pm-suspend, NOPASSWD: /usr/bin/wpa_supplicant, NOPASSWD: /usr/bin/mount, NOPASSWD: /usr/bin/umount, NOPASSWD: /usr/bin/eject
 ## ============================================================================
 
 ## Uncomment to allow members of group wheel to execute any command
-# %wheel ALL=(ALL) ALL
+# %wheel ALL=(ALL:ALL) ALL
 
 ## Same thing without a password
-# %wheel ALL=(ALL) NOPASSWD: ALL
+# %wheel ALL=(ALL:ALL) NOPASSWD: ALL
 
 ## Uncomment to allow members of group sudo to execute any command
-# %sudo	ALL=(ALL) ALL
+# %sudo	ALL=(ALL:ALL) ALL
 
 ## Uncomment to allow any user to run sudo if they know the password
 ## of the user they are running the command as (root by default).
 # Defaults targetpw  # Ask for the password of the target user
-# ALL ALL=(ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
+# ALL ALL=(ALL:ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
 
 ## Read drop-in files from /etc/sudoers.d
-## (the '#' here does not indicate a comment)
-#includedir /etc/sudoers.d
+@includedir /etc/sudoers.d
