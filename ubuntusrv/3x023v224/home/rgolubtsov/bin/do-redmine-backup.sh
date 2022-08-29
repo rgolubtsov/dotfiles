@@ -2,8 +2,8 @@
 # ~/bin/do-redmine-backup.sh
 # =============================================================================
 # This script performs a complete backup of the whole Redmine installation
-# along with its corresponding database, and uploads those tarballs
-# to the FTP server.
+# along with its corresponding database, ~and uploads those tarballs
+# to the FTP server.~
 # =============================================================================
 # Written by Radislav (Radicchio) Golubtsov, 2022.
 #
@@ -34,7 +34,7 @@ declare -r FULL_DBDUMP_NAME="${DATABASE_NAME}-${WEB_SERVER_IP}-${DATE_AND_TIME}.
 
 declare -r FTP_SERVER_IP="192.168.0.FTP"
 
-backup_store_dir=/tmp/redmine/
+backup_store_dir=/var/local/redmine/
 redmine_full_path=/opt/redmine-5.0.2
 db_username=root
 db_password=<dbpassword>
@@ -52,7 +52,7 @@ xz                                                             ${backup_store_di
 
 # FTP-ing all the backups.
 # Note: See the ~/.netrc config for actual FTP commands to do the job.
-ftp -p ${FTP_SERVER_IP}
+#ftp -p ${FTP_SERVER_IP}
 
 # --- Payload - End -----------------------------------------------------------
 
