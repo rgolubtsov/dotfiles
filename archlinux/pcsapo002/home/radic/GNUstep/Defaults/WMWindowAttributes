@@ -1,0 +1,60 @@
+{
+  firefox.Firefox = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
+  };
+  soffice.Soffice = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
+  };
+  "com-sun-star-script-framework-provider-SwingInvocation$1.com-sun-star-script-framework-provider-SwingInvocation$1" = {
+    Icon = "com-sun-star-script-framework-provider-SwingInvocation$1.com-sun-star-script-framework-provider-SwingInvocation$1.xpm";
+  };
+  "qemu-system-x86_64.Qemu-system-x86_64" = {
+    AlwaysUserIcon = Yes;
+    Icon = defaultterm.tiff;
+  };
+  gimp.Gimp = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
+  };
+  xterm.XTerm = {
+    Icon = GNUterm.tiff;
+  };
+  "gimp-2.8.Gimp-2.8" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gimp-2.8.Gimp-2.8.xpm";
+  };
+  xcalc.XCalc = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/xcalc.XCalc.xpm";
+  };
+  screenshot.Screenshot = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/screenshot.Screenshot.xpm";
+  };
+  "gradient-flare.Gradient-flare" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/gradient-flare.Gradient-flare.xpm";
+  };
+  "qtconfig-qt4.Qtconfig-qt4" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/qtconfig-qt4.Qtconfig-qt4.xpm";
+  };
+  urxvt.URxvt = {
+    Icon = linuxterm.tiff;
+  };
+  groupLeader.WPrefs = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
+  };
+  "com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/com-secretseal-policyatlas-patchtool-PatchTool.com-secretseal-policyatlas-patchtool-PatchTool.xpm";
+  };
+  viber.ViberPC = {
+    Icon = ICQ.png;
+  };
+  chromium.Chromium = {
+    Icon = Mozilla.png;
+  };
+  "file-jpeg.File-jpeg" = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
+  };
+  skypeforlinux.Skypeforlinux = {
+    Icon = skypeforlinux.png;
+  };
+  win.Xpdf = {
+    Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/win.Xpdf.xpm";
+  };
+}

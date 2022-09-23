@@ -1,0 +1,161 @@
+{
+  Dock = {
+    AutoRaiseLower = No;
+    Applications = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = Yes;
+        Command = "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs";
+      },
+      {
+        Forced = No;
+        Name = xterm.XTerm;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = Yes;
+        Command = xterm;
+      },
+      {
+        Forced = No;
+        Name = wmclockmon.DockApp;
+        DropCommand = "wmclockmon %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,2";
+        Lock = Yes;
+        PasteCommand = "wmclockmon %s";
+        Command = wmclockmon;
+      },
+      {
+        Forced = No;
+        Name = wmcpuload.DockApp;
+        DropCommand = "wmcpuload %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,3";
+        Lock = Yes;
+        PasteCommand = "wmcpuload %s";
+        Command = wmcpuload;
+      },
+      {
+        Forced = No;
+        Name = wmnetload.DockApp;
+        DropCommand = "wmnetload %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,4";
+        Lock = Yes;
+        PasteCommand = "wmnetload %s";
+        Command = "wmnetload -i enp2s0";
+      },
+      {
+        Forced = No;
+        Name = wmsystemtray0.wmsystemtray;
+        DropCommand = "wmsystemtray %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,5";
+        Lock = Yes;
+        PasteCommand = "wmsystemtray %s";
+        Command = wmsystemtray;
+      }
+    );
+    Applications1080 = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = Yes;
+        Command = "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs";
+      },
+      {
+        Forced = No;
+        Name = xterm.XTerm;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = Yes;
+        Command = xterm;
+      },
+      {
+        Forced = No;
+        Name = wmclockmon.DockApp;
+        DropCommand = "wmclockmon %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,2";
+        Lock = Yes;
+        PasteCommand = "wmclockmon %s";
+        Command = wmclockmon;
+      },
+      {
+        Forced = No;
+        Name = wmcpuload.DockApp;
+        DropCommand = "wmcpuload %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,3";
+        Lock = Yes;
+        PasteCommand = "wmcpuload %s";
+        Command = wmcpuload;
+      },
+      {
+        Forced = No;
+        Name = wmnetload.DockApp;
+        DropCommand = "wmnetload %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,4";
+        Lock = Yes;
+        PasteCommand = "wmnetload %s";
+        Command = "wmnetload -i enp2s0";
+      },
+      {
+        Forced = No;
+        Name = wmsystemtray0.wmsystemtray;
+        DropCommand = "wmsystemtray %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,5";
+        Lock = Yes;
+        PasteCommand = "wmsystemtray %s";
+        Command = wmsystemtray;
+      }
+    );
+    Lowered = No;
+    Position = "-64,0";
+  };
+  Clip = {
+    Forced = No;
+    Name = Logo.WMClip;
+    DropCommand = "wmsetbg -u -t %d";
+    BuggyApplication = No;
+    AutoLaunch = No;
+    Position = "0,0";
+    Lock = No;
+    Command = "-";
+  };
+  Applications = ();
+  Drawers = ();
+  Workspaces = (
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = ();
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = Main;
+    }
+  );
+  Workspace = Main;
+}

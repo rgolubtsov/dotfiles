@@ -1,0 +1,64 @@
+{
+  FrameBorderColor = "#000000";
+  FTitleColor = "#ffffff";
+  CycleIgnoreMinimized = YES;
+  MenuDisabledColor = "#7f7f7f";
+  IconTitleBack = "#000000";
+  PixmapPath = (
+    "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/radic/GNUstep/Library/WindowMaker/Backgrounds",
+    "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/share/WindowMaker/Backgrounds",
+    "/usr/share/pixmaps"
+  );
+  ToggleKbdModeKey = None;
+  DragMaximizedWindow = NoMove;
+  ClipTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  MiniwindowTitleBalloons = YES;
+  IconTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  LargeDisplayFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=32";
+  RaiseAppIconsWhenBouncing = YES;
+  WindowPlacement = center;
+  IconTitleColor = "#ffffff";
+  SingleClickLaunch = YES;
+  Attraction = YES;
+  MenuTextColor = "#000000";
+  AntialiasedText = YES;
+  MenuTitleColor = "#ffffff";
+  MenuTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  ShadeSpeed = ultraslow;
+  MenuTextFont = "Liberation Sans:slant=0:weight=80:width=100:pixelsize=13";
+  NoWindowOverDock = YES;
+  NoWindowOverIcons = YES;
+  HighlightTextColor = "#000000";
+  MenuScrollSpeed = slow;
+  HelpBalloons = YES;
+  AutoArrangeIcons = YES;
+  AppIconBalloons = YES;
+  ClipTitleColor = "#000000";
+  FrameFocusedBorderColor = "#000000";
+  HighlightColor = "#ffffff";
+  WindowTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  WindowPlaceOrigin = (0, 0);
+  CClipTitleColor = "#616161";
+  IconSlideSpeed = ultraslow;
+  IconPath = (
+    "/home/radic/GNUstep/Library/Icons",
+    "/usr/share/WindowMaker/Icons",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/usr/share/icons",
+    "/usr/share/pixmaps"
+  );
+  KbdModeLock = NO;
+  CycleActiveHeadOnly = YES;
+  SaveSessionOnExit = YES;
+  UTitleColor = "#000000";
+  ViKeyMenus = YES;
+  PTitleColor = "#ffffff";
+  StickyIcons = YES;
+  ShowClipTitle = NO;
+  FrameSelectedBorderColor = "#ffffff";
+}
