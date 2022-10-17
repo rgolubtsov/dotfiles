@@ -1,6 +1,6 @@
 # Ubuntu Server LTS VM box
 
-* **3x023v224**: Ubuntu Server 22.04.1 LTS (x86-64), VMware vSphere-based
+* **3x023v224**: Ubuntu Server 22.04.1 LTS x86-64 (VMware vSphere-based)
 
 ---
 
