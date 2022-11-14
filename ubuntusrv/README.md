@@ -37,34 +37,27 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radic@radicv144
-Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-113-generic x86_64)
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-52-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Sat 28 May 2022 11:50:30 PM AEST
+  System information as of Mon Nov 14 05:40:10 PM +03 2022
 
-  System load:  0.37               Processes:                125
-  Usage of /:   18.8% of 78.62GB   Users logged in:          1
-  Memory usage: 18%                IPv4 address for docker0: 172.17.0.1
+  System load:  0.0107421875       Processes:                102
+  Usage of /:   19.9% of 78.56GB   Users logged in:          1
+  Memory usage: 17%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
- * Super-optimized for small spaces - read how we shrank the memory
-   footprint of MicroK8s to make it the smallest full K8s around.
-
-   https://ubuntu.com/blog/microk8s-memory-optimisation
 
 0 updates can be applied immediately.
 
-Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-applicable law.
 
-
-Last login: Sat May 28 23:50:20 2022 from 10.0.2.1
+Last login: Mon Nov 14 17:40:00 2022 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.4.0-113-generic #127-Ubuntu SMP Wed May 18 14:30:56 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 5.15.0-52-generic #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
