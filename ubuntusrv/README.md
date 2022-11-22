@@ -10,7 +10,7 @@ Launching an Ubuntu Server guest on an Arch Linux host:
 $ qemu-system-x86_64 -m 2G -enable-kvm -cpu host -smp 2 -net nic,model=virtio -net vde -drive file=/opt/radicv144/radicv144ubuntu14044serveramd6400,format=raw > /dev/null 2>&1 &
 ```
 
-Adding `ssh-agent`:
+Starting up SSH agent in the background and adding a private key:
 
 ```
 $ eval `ssh-agent -s` && ssh-add
@@ -37,38 +37,42 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radic@radicv144
-Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-52-generic x86_64)
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-53-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Mon Nov 14 05:40:10 PM +03 2022
+  System information as of Tue Nov 22 02:30:10 PM +03 2022
 
-  System load:  0.0107421875       Processes:                102
-  Usage of /:   19.9% of 78.56GB   Users logged in:          1
-  Memory usage: 17%                IPv4 address for docker0: 172.17.0.1
+  System load:  0.02490234375      Processes:                101
+  Usage of /:   20.4% of 78.56GB   Users logged in:          1
+  Memory usage: 14%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
 
 0 updates can be applied immediately.
 
 
-Last login: Mon Nov 14 17:40:00 2022 from 10.0.2.1
+Last login: Tue Nov 22 14:30:00 2022 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.15.0-52-generic #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 5.15.0-53-generic #59-Ubuntu SMP Mon Oct 17 18:53:30 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
 
-(1) In an Arch Linux host:
+1. In an Arch Linux host **do**:
 
 ```
 $ sudo qemu-img resize /opt/radicv144/radicv144ubuntu14044serveramd6400 +60G
 ```
 
-(2) In an Ubuntu Server guest:
+2. In an Ubuntu Server guest **do**:
 
 Run `sudo fdisk /dev/sda` and add a new partition, then reboot the VM.
 
@@ -153,7 +157,7 @@ $
 $ sudo swapon /swap
 ```
 
-Finally check/watch the swap file is utilized by the system:
+Finally, check/watch the swap file is utilized by the system:
 
 ```
 $ ls -al /swap /sda2/swap
