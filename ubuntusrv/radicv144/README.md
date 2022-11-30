@@ -9,9 +9,9 @@
 ```
 $ # === CPU:
 $
-$ echo && cat /proc/cpuinfo | grep CPU | uniq                              && \
+$ echo && cat /proc/cpuinfo | grep CPU | uniq                       && \
   echo '----------------------------------------------------------' && \
-  cat /proc/cpuinfo | grep bogomips | uniq                                 && \
+  cat /proc/cpuinfo | grep bogomips | uniq                          && \
   echo -n 'Total: ' && cat /proc/cpuinfo | grep CPU | wc -l
 
 model name	: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
