@@ -10,9 +10,9 @@
 $ # === CPU:
 $
 $ echo && cat /proc/cpuinfo | grep CPU | uniq                              && \
-> echo '-----------------------------------------------------------------' && \
-> cat /proc/cpuinfo | grep bogomips | uniq                                 && \
-> echo -n 'Total: ' && cat /proc/cpuinfo | grep CPU | wc -l
+  echo '-----------------------------------------------------------------' && \
+  cat /proc/cpuinfo | grep bogomips | uniq                                 && \
+  echo -n 'Total: ' && cat /proc/cpuinfo | grep CPU | wc -l
 
 model name	: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz
 -----------------------------------------------------------------
@@ -22,8 +22,8 @@ $
 $ # === Memory:
 $
 $ echo && cat /proc/meminfo | grep Mem && \
-> echo '---------------------------'   && \
-> cat /proc/meminfo | grep Swap
+  echo '---------------------------'   && \
+  cat /proc/meminfo | grep Swap
 
 MemTotal:        4018444 kB
 MemFree:          483952 kB
