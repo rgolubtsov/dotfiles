@@ -2,6 +2,8 @@
 
 * **radicx101**: Arch Linux 32 (i686)
 
+**ASUS Eee PC X101CH** (Mfd. circa middle of Spring 2012)
+
 ---
 
 **Under the hood:**
