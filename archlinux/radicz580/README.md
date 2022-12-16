@@ -2,6 +2,8 @@
 
 * **radicz580**: Arch Linux (x86-64)
 
+**Lenovo IdeaPad Z580** (Mfd. September 2012)
+
 ---
 
 **Under the hood:**
