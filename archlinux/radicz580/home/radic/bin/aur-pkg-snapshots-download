@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# utils/aur-pkg-snapshots-download
+# ~/bin/aur-pkg-snapshots-download
 # =============================================================================
 # This helper script downloads package snapshots from the Arch User Repository
 # (AUR) for --foreign packages currently installed on the system,
