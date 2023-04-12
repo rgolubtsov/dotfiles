@@ -1,6 +1,6 @@
 # Ubuntu Server LTS VM box
 
-* **radicv144**: Ubuntu Server 22.04.1 LTS x86-64 (QEMU-KVM)
+* **radicv144**: Ubuntu Server 22.04.2 LTS x86-64 (QEMU-KVM)
 
 ---
 

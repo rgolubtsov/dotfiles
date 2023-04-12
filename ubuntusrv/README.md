@@ -36,17 +36,17 @@ $ cat /etc/hosts
 SSH-ing into this box:
 
 ```
-$ ssh -C radic@radicv144
-Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-53-generic x86_64)
+$ ssh -C radicv144
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-69-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Nov 22 02:30:10 PM +03 2022
+  System information as of Wed Apr 12 09:40:10 PM +03 2023
 
-  System load:  0.02490234375      Processes:                101
-  Usage of /:   20.4% of 78.56GB   Users logged in:          1
+  System load:  0.0                Processes:                98
+  Usage of /:   21.6% of 78.56GB   Users logged in:          1
   Memory usage: 14%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
@@ -55,13 +55,24 @@ Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-53-generic x86_64)
 
    https://ubuntu.com/engage/secure-kubernetes-at-the-edge
 
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
 0 updates can be applied immediately.
 
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
-Last login: Tue Nov 22 14:30:00 2022 from 10.0.2.1
+
+Last login: Wed Apr 12 21:40:00 2023 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.15.0-53-generic #59-Ubuntu SMP Mon Oct 17 18:53:30 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 5.15.0-69-generic #76-Ubuntu SMP Fri Mar 17 17:19:29 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
