@@ -7,7 +7,7 @@
 Launch an OpenBSD guest on an Arch Linux host:
 
 ```
-$ qemu-system-x86_64 -m 2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv610/radicv610openbsd61amd6400,format=raw,if=virtio > /dev/null 2>&1 &
+$ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv610/radicv610openbsd61amd6400,format=raw,if=virtio > /dev/null 2>&1 &
 ```
 
 When the guest OS (OpenBSD) is up and running, login into it and configure the network like the following:
@@ -128,9 +128,9 @@ $ cat /etc/hosts
 Login into this box through SSH:
 
 ```
-$ ssh -C radic@radicv610
-Last login: Wed May  3 04:24:49 2017 from 10.0.2.1
-OpenBSD 6.1 (GENERIC.MP) #20: Sat Apr  1 13:45:56 MDT 2017
+$ ssh -C radicv610
+Last login: Fri Jun 30 19:40:00 2023 from 10.0.2.1
+OpenBSD 6.7 (GENERIC.MP) #1: Sat May 16 16:33:02 MDT 2020
 
 Welcome to OpenBSD: The proactively secure Unix-like operating system.
 
@@ -140,9 +140,9 @@ version of the code.  With bug reports, please try to ensure that
 enough information to reproduce the problem is enclosed, and if a
 known fix for it exists, include that as well.
 
-[23:46:59][radic][radicv610][~]$
-[23:47:00][radic][radicv610][~]$ uname -a
-OpenBSD radicv610.my.domain 6.1 GENERIC.MP#20 amd64
+$
+$ uname -a
+OpenBSD radicv610.my.domain 6.7 GENERIC.MP#1 amd64
 ```
 
 Step by step instructions on how to upgrade OpenBSD from the 6.3 release to the 6.5 release can be found [here](http://rgolubtsov.github.io/data/docs/openbsd/upgrade-63-to-65 "Upgrade OpenBSD 6.3 to 6.5").
