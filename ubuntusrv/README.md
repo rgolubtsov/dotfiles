@@ -37,23 +37,19 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-73-generic x86_64)
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-78-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Jun 13 07:40:10 PM +03 2023
+  System information as of Wed Aug  9 08:40:10 PM +03 2023
 
   System load:  0.0                Processes:                98
-  Usage of /:   21.3% of 78.56GB   Users logged in:          1
-  Memory usage: 14%                IPv4 address for docker0: 172.17.0.1
+  Usage of /:   22.5% of 78.56GB   Users logged in:          1
+  Memory usage: 13%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
-
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
 
 Expanded Security Maintenance for Applications is not enabled.
 
@@ -63,10 +59,10 @@ Expanded Security Maintenance for Applications is not enabled.
 Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 
-Last login: Tue Jun 13 19:40:00 2023 from 10.0.2.1
+Last login: Wed Aug  9 20:40:00 2023 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.15.0-73-generic #80-Ubuntu SMP Mon May 15 15:18:26 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 5.15.0-78-generic #85-Ubuntu SMP Fri Jul 7 15:25:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
@@ -170,7 +166,7 @@ $ ls -al /swap /sda2/swap
 lrwxrwxrwx 1 root root         10 Nov 30 16:40 /swap -> /sda2/swap
 $
 $ free
-              total        used        free      shared  buff/cache   available
-Mem:        2564164       86000     1123916       10352     1354248     2273860
-Swap:       5242876           0     5242876
+               total        used        free      shared  buff/cache   available
+Mem:         1803188      256264      562288         968      984636     1383300
+Swap:        5242876           0     5242876
 ```
