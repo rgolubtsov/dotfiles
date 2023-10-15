@@ -1,4 +1,4 @@
-# Ubuntu Server LTS VM box (WSL2 on Windows 10 Pro laptop)
+# Ubuntu Server LTS VM box (WSL 2 on Windows 10 Pro laptop)
 
 * **pm15bs0xx**: Ubuntu Server 22.04.3 LTS x86-64 (Microsoft Hyper-V-based)
 
