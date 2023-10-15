@@ -39,6 +39,7 @@ SwapFree:        1048576 kB
 **The greeting and the kernel:**
 
 ```
+PS C:\> wsl -u radic --cd ~
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.90.1-microsoft-standard-WSL2 x86_64)
 
  * Documentation:  https://help.ubuntu.com

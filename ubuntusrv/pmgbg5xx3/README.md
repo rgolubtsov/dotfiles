@@ -39,12 +39,17 @@ SwapFree:        2097152 kB
 **The greeting and the kernel:**
 
 ```
+PS C:\> wsl -u radic --cd ~
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.90.1-microsoft-standard-WSL2 x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
 
 This message is shown once a day. To disable it please create the
 /home/radic/.hushlogin file.
