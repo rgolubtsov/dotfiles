@@ -1,0 +1,39 @@
+$ curl -LO https://cdn.openbsd.org/pub/OpenBSD/7.4/amd64/install74.iso
+...
+$
+$ file install74.iso
+install74.iso: ISO 9660 CD-ROM filesystem data 'OpenBSD/amd64   7.4 Install CD' (bootable)
+$
+$ curl -LO https://cdn.openbsd.org/pub/OpenBSD/7.4/amd64/SHA256
+...
+$
+$ sha256sum -c SHA256
+...
+install74.iso: OK
+...
+$
+$ qemu-img create -f raw radicv740openbsd74amd6400 20G
+Formatting 'radicv740openbsd74amd6400', fmt=raw size=21474836480
+$
+$ file radicv740openbsd74amd6400
+radicv740openbsd74amd6400: data
+$
+$ chmod -v 600 radicv740openbsd74amd6400
+mode of 'radicv740openbsd74amd6400' changed from 0644 (rw-r--r--) to 0600 (rw-------)
+$
+$ ls -al radicv740openbsd74amd6400
+-rw------- 1 <username> <usergroup> 21474836480 Oct 25 21:10 radicv740openbsd74amd6400
+$
+$ qemu-system-x86_64 -m 1G -enable-kvm -cpu host  -smp 2   \
+> -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde \
+> -cdrom install74.iso -boot order=d \
+> -drive file=radicv740openbsd74amd6400,format=raw,if=virtio
+$
+...
+$
+$ file radicv740openbsd74amd6400
+radicv740openbsd74amd6400: DOS/MBR boot sector; partition 4 : ID=0xa6, active, start-CHS (0x0,1,2), end-CHS (0x3ff,254,63), startsector 64, 41942976 sectors
+$
+$ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=radicv740openbsd74amd6400,format=raw,if=virtio > /dev/null 2>&1 &
+...
+$
