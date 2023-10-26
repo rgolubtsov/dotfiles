@@ -1,6 +1,7 @@
 # OpenBSD (VM-)boxes
 
-* **radicv610.my.domain**: OpenBSD/amd64 (QEMU-KVM)
+* **radicv610.my.domain**: OpenBSD/amd64 6.7 (QEMU-KVM)
+* **radicv740.my.domain**: OpenBSD/amd64 7.4 (QEMU-KVM)
 
 ---
 
@@ -8,6 +9,10 @@ Launch an OpenBSD guest on an Arch Linux host:
 
 ```
 $ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv610/radicv610openbsd61amd6400,format=raw,if=virtio > /dev/null 2>&1 &
+```
+
+```
+$ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv740/radicv740openbsd74amd6400,format=raw,if=virtio > /dev/null 2>&1 &
 ```
 
 When the guest OS (OpenBSD) is up and running, login into it and configure the network like the following:
