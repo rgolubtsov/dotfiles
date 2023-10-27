@@ -57,3 +57,13 @@ $
 $ uname -a
 Linux pmgbg5xx3 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
+
+**Exported WSL 2 VM box images (TAR and VHD):**
+
+```
+$ file \
+  pmgbg5xx3-ubuntu-jammy-lts-20231019-expo.tar \
+  pmgbg5xx3-ubuntu-jammy-lts-20231019-expo.vhdx
+pmgbg5xx3-ubuntu-jammy-lts-20231019-expo.tar:  POSIX tar archive
+pmgbg5xx3-ubuntu-jammy-lts-20231019-expo.vhdx: Microsoft Disk Image eXtended, by Microsoft Windows 10.0.22621.0, sequence 0x3c, NO Log Signature; region, 2 entries, id BAT, at 0x300000, Required 1, id Metadata, at 0x200000, Required 1, 2nd region INVALID
+```
