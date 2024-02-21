@@ -4,7 +4,7 @@
 # This script performs a backup of Zabbix database
 # and uploads that compressed DB dump to the FTP server.
 # =============================================================================
-# Written by Radislav (Radicchio) Golubtsov, 2022-2023.
+# Written by Radislav (Radicchio) Golubtsov, 2022-2024.
 #
 
 # Helper constants.
