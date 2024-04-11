@@ -37,32 +37,36 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-88-generic x86_64)
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 5.15.0-102-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
+ * Support:        https://ubuntu.com/pro
 
-  System information as of Sun Nov 12 07:20:30 PM +03 2023
+  System information as of Thu Apr 11 08:30:20 PM +03 2024
 
-  System load:  0.080078125        Processes:                103
+  System load:  0.0                Processes:                98
   Usage of /:   24.0% of 78.56GB   Users logged in:          1
-  Memory usage: 14%                IPv4 address for docker0: 172.17.0.1
+  Memory usage: 13%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
 
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
 
 Expanded Security Maintenance for Applications is not enabled.
 
 0 updates can be applied immediately.
 
-2 additional security updates can be applied with ESM Apps.
+3 additional security updates can be applied with ESM Apps.
 Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 
-Last login: Sun Nov 12 19:20:50 2023 from 10.0.2.1
+Last login: Thu Apr 11 20:30:30 2024 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.15.0-88-generic #98-Ubuntu SMP Mon Oct 2 15:18:56 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 5.15.0-102-generic #112-Ubuntu SMP Tue Mar 5 16:50:32 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
