@@ -44,12 +44,12 @@ jmtpfs 0.5-3
 libdockapp 0.7.3-1
 normalize 0.7.7-7
 pm-utils 1.4.1-8
-rxvt-unicode-better-wheel-scrolling 9.26-1
-skypeforlinux-stable-bin 8.97.0.204-1
-windowmaker 0.95.9-1
+rxvt-unicode-better-wheel-scrolling-unicode3 9.31-1
+skypeforlinux-stable-bin 8.109.0.209-1
+windowmaker 0.96.0-1
 wmclockmon 0.8.1-7
 wmcpuload 1.0.1-2
 wmnetload 1.3-3
 wmsystemtray 1.4-1
-zoom 5.14.7-1
+zoom 6.1.0-1
 ```
