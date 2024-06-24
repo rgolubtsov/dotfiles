@@ -1,9 +1,8 @@
 {
-  FrameBorderColor = "#000000";
   FTitleColor = "#ffffff";
-  CycleIgnoreMinimized = YES;
+  FrameBorderColor = "#000000";
   MenuDisabledColor = "#7f7f7f";
-  IconTitleBack = "#000000";
+  CycleIgnoreMinimized = YES;
   PixmapPath = (
     "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/radic/GNUstep/Library/WindowMaker/Backgrounds",
@@ -12,23 +11,24 @@
     "/usr/share/WindowMaker/Backgrounds",
     "/usr/share/pixmaps"
   );
+  IconTitleBack = "#000000";
   ToggleKbdModeKey = None;
   DragMaximizedWindow = NoMove;
-  ClipTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  ClipTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
   MiniwindowTitleBalloons = YES;
-  IconTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
-  LargeDisplayFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=32";
-  RaiseAppIconsWhenBouncing = YES;
+  IconTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
+  LargeDisplayFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=32";
   WindowPlacement = center;
+  RaiseAppIconsWhenBouncing = YES;
   IconTitleColor = "#ffffff";
-  SingleClickLaunch = YES;
-  Attraction = YES;
   MenuTextColor = "#000000";
-  AntialiasedText = YES;
+  Attraction = YES;
+  SingleClickLaunch = YES;
   MenuTitleColor = "#ffffff";
-  MenuTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  AntialiasedText = YES;
+  MenuTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
   ShadeSpeed = ultraslow;
-  MenuTextFont = "Liberation Sans:slant=0:weight=80:width=100:pixelsize=13";
+  MenuTextFont = "Noto Sans:slant=0:weight=80:width=87:pixelsize=13";
   NoWindowOverDock = YES;
   NoWindowOverIcons = YES;
   HighlightTextColor = "#000000";
@@ -39,7 +39,7 @@
   ClipTitleColor = "#000000";
   FrameFocusedBorderColor = "#000000";
   HighlightColor = "#ffffff";
-  WindowTitleFont = "Liberation Sans:slant=0:weight=200:width=100:pixelsize=15";
+  WindowTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
   WindowPlaceOrigin = (0, 0);
   CClipTitleColor = "#616161";
   IconSlideSpeed = ultraslow;
