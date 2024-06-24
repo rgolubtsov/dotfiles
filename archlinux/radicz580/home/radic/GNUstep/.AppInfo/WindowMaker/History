@@ -1,13 +1,8 @@
 (
   "xscreensaver-command -lock",
-  skypeforlinux,
   "xscreensaver-command -lock",
+  skypeforlinux,
   zoom,
-  "sudo ~/00/barracudavpn/barracudavpn",
-  "~/00/barracudavpn/barracudavpn",
-  ekiga,
-  "ekiga-config-tool",
-  "vmware-view",
-  arkanoidsb,
-  urxvt
+  urxvt,
+  arkanoidsb
 )
