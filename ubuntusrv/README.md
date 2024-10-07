@@ -7,7 +7,7 @@
 Launching an Ubuntu Server guest on an Arch Linux host:
 
 ```
-$ qemu-system-x86_64 -m 1.8G -enable-kvm -cpu host -smp 2 -net nic,model=virtio -net vde -drive file=/opt/radicv144/radicv144ubuntu14044serveramd6401,format=raw > /dev/null 2>&1 &
+$ qemu-system-x86_64 -m 1.8G -enable-kvm -cpu host -smp 2 -net nic,model=virtio -net vde -drive file=/opt/radicv144/radicv144ubuntu24041serveramd6401,format=raw > /dev/null 2>&1 &
 ```
 
 Starting up SSH agent in the background and adding a private key:
@@ -37,18 +37,18 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 5.15.0-102-generic x86_64)
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-45-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/pro
 
-  System information as of Thu Apr 11 08:30:20 PM +03 2024
+ System information as of Mon Oct  7 10:00:10 PM +03 2024
 
-  System load:  0.0                Processes:                98
-  Usage of /:   24.0% of 78.56GB   Users logged in:          1
-  Memory usage: 13%                IPv4 address for docker0: 172.17.0.1
-  Swap usage:   0%                 IPv4 address for ens3:    10.0.2.100
+  System load:  0.0                Processes:             110
+  Usage of /:   23.4% of 78.56GB   Users logged in:       1
+  Memory usage: 15%                IPv4 address for ens3: 10.0.2.100
+  Swap usage:   0%
 
  * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
    just raised the bar for easy, resilient and secure K8s cluster deployment.
@@ -59,14 +59,14 @@ Expanded Security Maintenance for Applications is not enabled.
 
 0 updates can be applied immediately.
 
-3 additional security updates can be applied with ESM Apps.
-Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
 
 
-Last login: Thu Apr 11 20:30:30 2024 from 10.0.2.1
+Last login: Mon Oct  7 21:50:10 2024 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 5.15.0-102-generic #112-Ubuntu SMP Tue Mar 5 16:50:32 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 6.8.0-45-generic #45-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 30 12:02:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
@@ -74,7 +74,7 @@ Linux radicv144 5.15.0-102-generic #112-Ubuntu SMP Tue Mar 5 16:50:32 UTC 2024 x
 1. In an Arch Linux host **do**:
 
 ```
-$ sudo qemu-img resize /opt/radicv144/radicv144ubuntu14044serveramd6401 +60G
+$ sudo qemu-img resize /opt/radicv144/radicv144ubuntu24041serveramd6401 +60G
 ```
 
 2. In an Ubuntu Server guest **do**:
