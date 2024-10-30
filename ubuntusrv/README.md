@@ -37,17 +37,17 @@ SSH-ing into this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-45-generic x86_64)
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-47-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/pro
 
- System information as of Mon Oct  7 10:00:10 PM +03 2024
+ System information as of Wed Oct 30 11:20:05 PM +03 2024
 
-  System load:  0.0                Processes:             110
-  Usage of /:   23.4% of 78.56GB   Users logged in:       1
-  Memory usage: 15%                IPv4 address for ens3: 10.0.2.100
+  System load:  0.0                Processes:             106
+  Usage of /:   23.2% of 78.56GB   Users logged in:       1
+  Memory usage: 12%                IPv4 address for ens3: 10.0.2.100
   Swap usage:   0%
 
  * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
@@ -63,10 +63,10 @@ Enable ESM Apps to receive additional future security updates.
 See https://ubuntu.com/esm or run: sudo pro status
 
 
-Last login: Mon Oct  7 21:50:10 2024 from 10.0.2.1
+Last login: Wed Oct 30 23:20:15 2024 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 6.8.0-45-generic #45-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 30 12:02:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 6.8.0-47-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 21:40:26 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
