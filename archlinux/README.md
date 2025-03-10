@@ -1,7 +1,6 @@
-# Arch Linux / Arch Linux 32 boxes
+# Arch Linux boxes
 
 * **radicz580**: Arch Linux (x86-64)
-* **radicx101**: Arch Linux 32 (i686)
 
 ---
 
