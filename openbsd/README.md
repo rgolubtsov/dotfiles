@@ -1,13 +1,50 @@
 # OpenBSD (VM-)boxes
 
+* **radicv760.my.domain**: OpenBSD/amd64 7.6 (QEMU-KVM)
 * **radicv610.my.domain**: OpenBSD/amd64 6.7 (QEMU-KVM)
 
 ---
 
-Launch an OpenBSD guest on an Arch Linux host:
+Boot up the OpenBSD guest on an Arch Linux host:
+
+* OpenBSD 7.6:
 
 ```
-$ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2 -net nic,macaddr=52:54:00:12:34:57,model=virtio -net vde -drive file=/opt/radicv610/radicv610openbsd61amd6400,format=raw,if=virtio > /dev/null 2>&1 &
+$ qemu-system-x86_64 -m 1.4G -enable-kvm -cpu host -smp 2                     \
+  -net nic,macaddr=52:54:00:12:34:57,model=virtio  -net vde                   \
+  -drive file=/opt/radicv760/radicv760openbsd76amd6400,format=raw,if=virtio > \
+  /dev/null 2>&1 &
+...
+```
+
+Log in to this box via SSH:
+
+```
+$ ssh -C radicv610
+Last login: Sat Mar 15 21:10:00 2025 from 10.0.2.1
+OpenBSD 7.6 (GENERIC.MP) #1: Mon Feb 10 00:14:14 MST 2025
+
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+
+Please use the sendbug(1) utility to report bugs in the system.
+Before reporting a bug, please try to reproduce it with the latest
+version of the code.  With bug reports, please try to ensure that
+enough information to reproduce the problem is enclosed, and if a
+known fix for it exists, include that as well.
+
+-bash-5.2$
+-bash-5.2$ uname -a
+OpenBSD radicv760.my.domain 7.6 GENERIC.MP#1 amd64
+```
+
+* OpenBSD 6.7:
+
+```
+$ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2                     \
+  -net nic,macaddr=52:54:00:12:34:57,model=virtio  -net vde                   \
+  -drive file=/opt/radicv610/radicv610openbsd61amd6400,format=raw,if=virtio > \
+  /dev/null 2>&1 &
+...
 ```
 
 When the guest OS (OpenBSD) is up and running, login into it and configure the network like the following:
@@ -125,7 +162,7 @@ $ cat /etc/hosts
 10.0.2.101                              localv610       radicv610  # <== OpenBSD VM
 ```
 
-Login into this box through SSH:
+Log in to this box via SSH:
 
 ```
 $ ssh -C radicv610
