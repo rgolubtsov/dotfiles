@@ -4,7 +4,7 @@
 
 ---
 
-Launching an Ubuntu Server guest on an Arch Linux host:
+Booting up the Ubuntu Server guest on an Arch Linux host:
 
 ```
 $ qemu-system-x86_64 -m 1.8G -enable-kvm -cpu host -smp 2 -net nic,model=virtio -net vde -drive file=/opt/radicv144/radicv144ubuntu24041serveramd6401,format=raw > /dev/null 2>&1 &
