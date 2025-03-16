@@ -20,7 +20,7 @@ $ qemu-system-x86_64 -m 1.4G -enable-kvm -cpu host -smp 2                     \
 Log in to this box via SSH:
 
 ```
-$ ssh -C radicv610
+$ ssh -C radicv760
 Last login: Sat Mar 15 21:10:00 2025 from 10.0.2.1
 OpenBSD 7.6 (GENERIC.MP) #1: Mon Feb 10 00:14:14 MST 2025
 
@@ -152,14 +152,16 @@ Identity added: /home/radic/.ssh/id_rsa (/home/radic/.ssh/id_rsa)
 
 ```
 $ cat /etc/hosts
-# /etc/hosts: static lookup table for host names
+# Static table lookup for hostnames.
+# See hosts(5) for details.
 
-#<ip-address>   <hostname.domain.org>   <hostname>
 127.0.0.1       localhost.localdomain   localhost       radicz580  # <== Arch Linux host (IPv4)
 ::1             localhost.localdomain   localhost       radicz580  # <== Arch Linux host (IPv6)
 
-10.0.2.100                              localv144       radicv144  # <== Ubuntu Server VM
-10.0.2.101                              localv610       radicv610  # <== OpenBSD VM
+10.0.2.100                              radicv144                  # <== Ubuntu Server VM
+10.0.2.101      radicv760.my.domain     radicv760       radicv610  # <== OpenBSD VM
+
+# vim:set nu et ts=4 sw=4:
 ```
 
 Log in to this box via SSH:
