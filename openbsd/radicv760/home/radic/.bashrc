@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything.
 [[ $- != *i* ]] && return
 
+. ~/.git-completion.bash
+
 # Default prompt.
 #PS1='[\u@\h \W]\$ '
 
