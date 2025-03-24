@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# ~/bin/x11-xenodm-startup
+# =============================================================================
+# This helper script starts up `xenodm` X Display Manager stopping the wsmoused
+# daemon prior to that, because the latter is known to conflict
+# with the X11 mouse driver.
+# It must be run on behalf of superuser.
+# =============================================================================
+# Copyright (C) 2025 Radislav (Radicchio) Golubtsov
+#
+# (See the LICENSE file at the top of the source tree.)
+#
+
+# Helper constants.
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+rcctl stop wsmoused; xenodm -nodaemon
+
+# If there is an error -- telling the OS about this.
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# vim:set nu et ts=4 sw=4:
