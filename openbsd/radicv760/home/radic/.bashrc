@@ -19,7 +19,7 @@ PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;96m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]]
 
 export LANG=en_US.UTF-8
 
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$HOME/groovy/bin"
 
 # =============================================================================
 # vim:set nu et ts=4 sw=4:
