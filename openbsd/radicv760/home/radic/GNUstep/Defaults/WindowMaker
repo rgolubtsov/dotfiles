@@ -1,0 +1,64 @@
+{
+  FTitleColor = "#ffffff";
+  FrameBorderColor = "#000000";
+  MenuDisabledColor = "#7f7f7f";
+  CycleIgnoreMinimized = YES;
+  PixmapPath = (
+    "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/radic/GNUstep/Library/WindowMaker/Backgrounds",
+    "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/share/WindowMaker/Backgrounds",
+    "/usr/share/pixmaps"
+  );
+  IconTitleBack = "#000000";
+  ToggleKbdModeKey = None;
+  DragMaximizedWindow = NoMove;
+  ClipTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
+  MiniwindowTitleBalloons = YES;
+  IconTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
+  LargeDisplayFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=32";
+  WindowPlacement = center;
+  RaiseAppIconsWhenBouncing = YES;
+  IconTitleColor = "#ffffff";
+  MenuTextColor = "#000000";
+  Attraction = YES;
+  SingleClickLaunch = YES;
+  MenuTitleColor = "#ffffff";
+  AntialiasedText = YES;
+  MenuTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
+  ShadeSpeed = ultraslow;
+  MenuTextFont = "Noto Sans:slant=0:weight=80:width=87:pixelsize=13";
+  NoWindowOverDock = YES;
+  NoWindowOverIcons = YES;
+  HighlightTextColor = "#000000";
+  MenuScrollSpeed = slow;
+  HelpBalloons = YES;
+  AutoArrangeIcons = YES;
+  AppIconBalloons = YES;
+  ClipTitleColor = "#000000";
+  FrameFocusedBorderColor = "#000000";
+  HighlightColor = "#ffffff";
+  WindowTitleFont = "Noto Sans:slant=0:weight=200:width=87:pixelsize=13";
+  WindowPlaceOrigin = (0, 0);
+  CClipTitleColor = "#616161";
+  IconSlideSpeed = ultraslow;
+  IconPath = (
+    "/home/radic/GNUstep/Library/Icons",
+    "/usr/share/WindowMaker/Icons",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/usr/share/icons",
+    "/usr/share/pixmaps"
+  );
+  KbdModeLock = NO;
+  CycleActiveHeadOnly = YES;
+  SaveSessionOnExit = YES;
+  UTitleColor = "#000000";
+  ViKeyMenus = YES;
+  PTitleColor = "#ffffff";
+  StickyIcons = YES;
+  ShowClipTitle = NO;
+  FrameSelectedBorderColor = "#ffffff";
+}
