@@ -7,9 +7,9 @@
     "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/radic/GNUstep/Library/WindowMaker/Backgrounds",
     "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps",
-    "/usr/share/WindowMaker/Pixmaps",
-    "/usr/share/WindowMaker/Backgrounds",
-    "/usr/share/pixmaps"
+    "/usr/local/share/WindowMaker/Pixmaps",
+    "/usr/local/share/WindowMaker/Backgrounds",
+    "/usr/local/share/WPrefs/tiff"
   );
   IconTitleBack = "#000000";
   ToggleKbdModeKey = None;
@@ -45,12 +45,12 @@
   IconSlideSpeed = ultraslow;
   IconPath = (
     "/home/radic/GNUstep/Library/Icons",
-    "/usr/share/WindowMaker/Icons",
-    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/local/share/WindowMaker/Icons",
+    "/usr/local/share/WindowMaker/Pixmaps",
     "/home/radic/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps",
-    "/usr/share/icons",
-    "/usr/share/pixmaps"
+    "/usr/local/share/icons",
+    "/usr/local/share/WPrefs/tiff"
   );
   KbdModeLock = NO;
   CycleActiveHeadOnly = YES;
