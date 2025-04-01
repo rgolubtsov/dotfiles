@@ -2,7 +2,7 @@
   "Window Maker",
   (
     Applications,
-    (Terminals, (xterm, EXEC, xterm)),
+    (Terminals, (xterm, EXEC, xterm), (Urxvt, EXEC, urxvt)),
     (Internet, (Lynx, EXEC, "xterm -e lynx")),
     (Mathematics, (bc, EXEC, "xterm -e bc"), (XCalc, EXEC, xcalc)),
     (Graphics, (XBitmap, EXEC, bitmap)),
@@ -170,6 +170,7 @@
   (
     "Other Window Managers",
     ("Start twm", RESTART, twm),
+    ("Start Motif Window Manager", RESTART, mwm),
     ("Start FVWM", RESTART, fvwm)
   ),
   ("Lock Screen", EXEC, "xlock -allowroot -usefirst -mode matrix"),

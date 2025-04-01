@@ -10,6 +10,28 @@
         Position = "0,0";
         Lock = No;
         Command = "-";
+      },
+      {
+        Forced = No;
+        Name = wmclockmon.DockApp;
+        DropCommand = "wmclockmon %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = No;
+        PasteCommand = "wmclockmon %s";
+        Command = wmclockmon;
+      },
+      {
+        Forced = No;
+        Name = wmnetload.DockApp;
+        DropCommand = "wmnetload %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,2";
+        Lock = No;
+        PasteCommand = "wmnetload %s";
+        Command = wmnetload;
       }
     );
     Applications = (
@@ -21,6 +43,28 @@
         Position = "0,0";
         Lock = No;
         Command = "-";
+      },
+      {
+        Forced = No;
+        Name = wmclockmon.DockApp;
+        DropCommand = "wmclockmon %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = No;
+        PasteCommand = "wmclockmon %s";
+        Command = wmclockmon;
+      },
+      {
+        Forced = No;
+        Name = wmnetload.DockApp;
+        DropCommand = "wmnetload %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,2";
+        Lock = No;
+        PasteCommand = "wmnetload %s";
+        Command = wmnetload;
       }
     );
     Lowered = Yes;
