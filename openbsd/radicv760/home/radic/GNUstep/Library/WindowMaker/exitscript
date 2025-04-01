@@ -1,5 +1,7 @@
-#!/bin/sh
-#
+#!/usr/local/bin/bash
+# =============================================================================
+# ~/GNUstep/Library/WindowMaker/exitscript
+# =============================================================================
 # Place commands to be executed when WindowMaker is exited here.
 #
 # WindowMaker will wait until this script finishes, so if you run any
@@ -7,5 +9,7 @@
 # end of the command line.
 #
 # This file must be executable.
-#
 
+# =============================================================================
+# vim:set nu et ts=4 sw=4:
+# =============================================================================
