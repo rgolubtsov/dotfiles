@@ -11,10 +11,10 @@ ${exec_prefix}/bin/xconsole -geometry 480x130-0-0 -daemon -notify -verbose -fn f
 #  install package openbsd-backgrounds
 #  then uncomment:
 #
-# if test -x /usr/local/bin/openbsd-wallpaper
-# then
-# 	/usr/local/bin/openbsd-wallpaper
-# fi
+if test -x /usr/local/bin/openbsd-wallpaper
+then
+	/usr/local/bin/openbsd-wallpaper
+fi
 
 # Adjust screen size for use with QEMU by selecting an appropriate mode.
 xrandr --output default --mode 1280x768
