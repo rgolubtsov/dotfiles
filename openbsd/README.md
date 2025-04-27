@@ -1,7 +1,7 @@
 # OpenBSD (VM-)boxes
 
 * **radicv760.my.domain**: OpenBSD/amd64 7.6 (QEMU-KVM)
-* **radicv610.my.domain**: OpenBSD/amd64 6.7 (QEMU-KVM)
+* **radicv610.my.domain**: OpenBSD/amd64 6.7 (QEMU-KVM) *Wiped out in favor of using `radicv760.my.domain`*
 
 ---
 
@@ -37,7 +37,7 @@ known fix for it exists, include that as well.
 OpenBSD radicv760.my.domain 7.6 GENERIC.MP#1 amd64
 ```
 
-* OpenBSD 6.7:
+* OpenBSD 6.7 (*Wiped out in favor of using the 7.6 release-based VM*):
 
 ```
 $ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2                     \
