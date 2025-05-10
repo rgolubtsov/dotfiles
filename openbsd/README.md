@@ -1,13 +1,13 @@
 # OpenBSD (VM-)boxes
 
-* **radicv760.my.domain**: OpenBSD/amd64 7.6 (QEMU-KVM)
+* **radicv760.my.domain**: OpenBSD/amd64 7.7 (QEMU-KVM)
 * **radicv610.my.domain**: OpenBSD/amd64 6.7 (QEMU-KVM) *Wiped out in favor of using `radicv760.my.domain`*
 
 ---
 
 Boot up the OpenBSD guest on an Arch Linux host:
 
-* OpenBSD 7.6:
+* OpenBSD 7.7:
 
 ```
 $ qemu-system-x86_64 -m 1.4G -enable-kvm -cpu host -smp 2                     \
@@ -21,8 +21,8 @@ Log in to this box via SSH:
 
 ```
 $ ssh -C radicv760
-Last login: Sat Mar 15 21:10:00 2025 from 10.0.2.1
-OpenBSD 7.6 (GENERIC.MP) #1: Mon Feb 10 00:14:14 MST 2025
+Last login: Sat May 10 22:50:00 2025 from 10.0.2.1
+OpenBSD 7.7 (GENERIC.MP) #0: Sun May  4 11:23:50 MDT 2025
 
 Welcome to OpenBSD: The proactively secure Unix-like operating system.
 
@@ -32,12 +32,14 @@ version of the code.  With bug reports, please try to ensure that
 enough information to reproduce the problem is enclosed, and if a
 known fix for it exists, include that as well.
 
--bash-5.2$
--bash-5.2$ uname -a
-OpenBSD radicv760.my.domain 7.6 GENERIC.MP#1 amd64
+$
+$ uname -a
+OpenBSD radicv760.my.domain 7.7 GENERIC.MP#0 amd64
 ```
 
-* OpenBSD 6.7 (*Wiped out in favor of using the 7.6 release-based VM*):
+---
+
+* OpenBSD 6.7 (*Wiped out in favor of using the 7.7 release-based VM*):
 
 ```
 $ qemu-system-x86_64 -m 1.2G -enable-kvm -cpu host -smp 2                     \
@@ -184,8 +186,8 @@ $ uname -a
 OpenBSD radicv610.my.domain 6.7 GENERIC.MP#1 amd64
 ```
 
-Step by step instructions on how to upgrade OpenBSD from the 6.3 release to the 6.5 release can be found [here](http://rgolubtsov.github.io/data/docs/openbsd/upgrade-63-to-65 "Upgrade OpenBSD 6.3 to 6.5").
+Step by step instructions on how to upgrade OpenBSD from the 6.3 release to the 6.5 release can be found [here](https://rgolubtsov.github.io/data/docs/openbsd/upgrade-63-to-65 "Upgrade OpenBSD 6.3 to 6.5").
 
 ---
 
-**Semi-OFFTOP:** Some useful tips from [Eric Radman's blog](http://eradman.com "Eric Radman : A Journal"): [An OpenBSD Workstation](http://eradman.com/posts/openbsd-workstation.html "2013-07-05 : An OpenBSD Workstation (Last updated on March 28, 2017)").
+**Semi-OFFTOP:** Some useful tips from [Eric Radman's blog](https://eradman.com "Eric Radman : A Journal"): [An OpenBSD Workstation](https://eradman.com/posts/openbsd-workstation.html "2013-07-05 : An OpenBSD Workstation (Last updated on April 30, 2025)").
