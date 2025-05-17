@@ -8,8 +8,8 @@
         BuggyApplication = No;
         AutoLaunch = No;
         Position = "0,0";
-        Lock = No;
-        Command = "-";
+        Lock = Yes;
+        Command = "/usr/local/bin/WPrefs";
       },
       {
         Forced = No;
@@ -41,8 +41,8 @@
         BuggyApplication = No;
         AutoLaunch = No;
         Position = "0,0";
-        Lock = No;
-        Command = "-";
+        Lock = Yes;
+        Command = "/usr/local/bin/WPrefs";
       },
       {
         Forced = No;
