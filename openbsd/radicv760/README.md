@@ -26,3 +26,39 @@ $ echo -en '\n ' && dmesg | grep mem
  real mem = 1486319616 (1417MB)
 avail mem = 1414946816 (1349MB)
 ```
+
+**Install additional packages:**
+
+* For system administering and development:
+
+```
+$ sudo pkg_add -vr pstree nmap
+...
+$ sudo pkg_add -vr node lua go v
+...
+$ sudo pkg_add -vr erlang elixir lfe
+...
+$ sudo pkg_add -vr clojure
+...
+$ sudo pkg_add -vr crystal
+...
+```
+
+* For comfortable desktop experience, suitable as for development as well for entertainment:
+
+```
+$ sudo pkg_add -vr windowmaker        \
+                   windowmaker-extra  \
+                   wmclockmon wmnetload
+...
+$ sudo pkg_add -vr liberation-fonts noto-fonts    \
+                                    noto-cjk      \
+                                    noto-emoji    \
+                                    roboto-fonts  \
+                                    cantarell-fonts
+...
+$ sudo pkg_add -vr openbsd-backgrounds  \
+                   mplayer rxvt-unicode \
+                   chromium
+...
+```
