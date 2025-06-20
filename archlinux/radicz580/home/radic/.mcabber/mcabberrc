@@ -2,12 +2,9 @@
 # ~/.mcabber/mcabberrc
 # =============================================================================
 
-#set jid               = rgolubtsov@/old-jabber-domain/
-set jid               = radislav.golubtsov@/new-jabber-domain/
-#set server            = jabber./old-jabber-domain/
-set server            = mail./new-jabber-domain/
-#set port              = 5222
-set port              = 5223
+set jid               = rgolubtsov@/jabber-domain/
+set server            = jabber./jabber-domain/
+set port              = 5222
 set resource          = radicz580
 set priority          = 1
 set ssl               = 1
