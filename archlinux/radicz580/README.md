@@ -36,7 +36,7 @@ SwapTotal:       8787988 kB
 SwapFree:        8167404 kB
 ```
 
-**Packages from the AUR (2025-04-25):**
+**Packages from the AUR (2025-09-20):**
 
 ```
 $ pacman -Qm
@@ -44,8 +44,9 @@ jmtpfs 0.5-3
 libdockapp 0.7.3-1
 normalize 0.7.7-7
 pm-utils 1.4.1-8
+redis 7.2.5-1
 rxvt-unicode-truecolor-wide-glyphs 9.31-10
-vlang 0.4.10-3
+vlang 0.4.11-1
 windowmaker 0.96.0-1
 wmclockmon 0.8.1-7
 wmcpuload 1.0.1-2
