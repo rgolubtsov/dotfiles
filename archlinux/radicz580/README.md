@@ -18,44 +18,55 @@ $ echo && cat /proc/cpuinfo | grep CPU | uniq                       && \
 
 model name	: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
 ----------------------------------------------------------
-bogomips	: 4790.38
+bogomips	: 4789.11
 Total: 4
 $
-$ # === Memory:
+$ # === Memory (2025-12-13):
 $
 $ echo && cat /proc/meminfo | grep Mem && \
   echo '---------------------------'   && \
   cat /proc/meminfo | grep Swap
 
-MemTotal:        5936080 kB
-MemFree:          680440 kB
-MemAvailable:    1922168 kB
+MemTotal:        5922444 kB
+MemFree:         1456540 kB
+MemAvailable:    3734816 kB
 ---------------------------
-SwapCached:        67720 kB
+SwapCached:            0 kB
 SwapTotal:       8787988 kB
-SwapFree:        8167404 kB
+SwapFree:        8787972 kB
+$
+$ # === The running kernel:
+$
+$ uname -a
+Linux radicz580 6.17.9-arch1-1 #1 SMP PREEMPT_DYNAMIC Mon, 24 Nov 2025 15:21:09 +0000 x86_64 GNU/Linux
+$
+$ lsb_release -a
+LSB Version:    n/a
+Distributor ID: Arch
+Description:    Arch Linux
+Release:        rolling
+Codename:       n/a
 ```
 
-**Packages from the AUR (2025-09-20):**
+**Packages from the AUR (2025-12-13):**
 
 ```
 $ pacman -Qm
+gtk2 2.24.33-5
 jmtpfs 0.5-3
 libdockapp 0.7.3-1
 normalize 0.7.7-7
 pm-utils 1.4.1-8
-redis 7.2.5-1
-rxvt-unicode-truecolor-wide-glyphs 9.31-10
+rxvt-unicode-truecolor-wide-glyphs 9.31-11
 vlang 0.4.11-1
 windowmaker 0.96.0-1
 wmclockmon 0.8.1-7
-wmcpuload 1.0.1-2
+wmcpuload 1.1.1-1
 wmnetload 1.3-3
 wmsystemtray 1.4-3
-zoom 6.4.6-1
 ```
 
-**A typical system load: uptime and process tree as of evening 2025-10-02:**
+**A typical system load: uptime and process tree (2025-10-02):**
 
 ```
 $ uptime && pstree
