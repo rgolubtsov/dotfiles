@@ -17,7 +17,7 @@ alias ls='ls --color=auto'
 PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;96m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]][\[\e[0;92m\]\w\[\e[0m\]]\$ "
 #PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;93m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]][\[\e[0;92m\]\w\[\e[0m\]]\$ "
 
-export PATH="$PATH:$HOME/bin:$HOME/julia/bin"
+export PATH="$PATH:$HOME/bin"
 
 #export {http,https,ftp}_proxy=http://192.168.0.6:8080
 
