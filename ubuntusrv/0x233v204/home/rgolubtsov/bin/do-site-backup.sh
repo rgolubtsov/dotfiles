@@ -5,7 +5,7 @@
 # along with its corresponding database, and uploads those tarballs
 # to the FTP server.
 # =============================================================================
-# Written by Radislav (Radicchio) Golubtsov, 2021-2025
+# Written by Radislav (Radicchio) Golubtsov, 2021-2026
 #
 
 # Helper constants.
