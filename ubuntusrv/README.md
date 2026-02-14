@@ -40,19 +40,23 @@ SSH-ing in to this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-79-generic x86_64)
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-100-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/pro
 
- System information as of Tue Sep  9 08:40:10 PM CEST 2025
+ System information as of Sat Feb 14 10:50:10 AM CET 2026
 
-  System load:  0.0                Processes:             107
-  Usage of /:   23.1% of 78.56GB   Users logged in:       1
-  Memory usage: 14%                IPv4 address for ens3: 10.0.2.100
+  System load:  0.1                Processes:             112
+  Usage of /:   24.2% of 78.56GB   Users logged in:       1
+  Memory usage: 20%                IPv4 address for ens3: 10.0.2.100
   Swap usage:   0%
 
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
 
 Expanded Security Maintenance for Applications is not enabled.
 
@@ -62,15 +66,15 @@ Expanded Security Maintenance for Applications is not enabled.
 Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 
-Last login: Tue Sep  9 20:00:30 2025 from 10.0.2.1
+Last login: Sat Feb 14 10:00:30 2026 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 6.8.0-79-generic #79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 13 16:40:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
 $
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
-Description:    Ubuntu 24.04.3 LTS
+Description:    Ubuntu 24.04.4 LTS
 Release:        24.04
 Codename:       noble
 ```

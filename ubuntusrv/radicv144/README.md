@@ -1,6 +1,6 @@
 # Ubuntu Server LTS VM box
 
-* **radicv144**: Ubuntu Server 24.04.3 LTS x86-64 (QEMU-KVM)
+* **radicv144**: Ubuntu Server 24.04.4 LTS x86-64 (QEMU-KVM)
 
 ---
 
@@ -25,9 +25,9 @@ $ echo && cat /proc/meminfo | grep Mem && \
   echo '---------------------------'   && \
   cat /proc/meminfo | grep Swap
 
-MemTotal:        1807372 kB
-MemFree:          877920 kB
-MemAvailable:    1408208 kB
+MemTotal:        1807228 kB
+MemFree:          277704 kB
+MemAvailable:    1420296 kB
 ---------------------------
 SwapCached:            0 kB
 SwapTotal:       5242876 kB
