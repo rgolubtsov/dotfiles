@@ -40,17 +40,17 @@ SSH-ing in to this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-100-generic x86_64)
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-101-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/pro
 
- System information as of Sat Feb 14 10:50:10 AM CET 2026
+ System information as of Wed Mar  4 10:50:10 PM CET 2026
 
-  System load:  0.1                Processes:             112
-  Usage of /:   24.2% of 78.56GB   Users logged in:       1
-  Memory usage: 20%                IPv4 address for ens3: 10.0.2.100
+  System load:  0.07               Processes:             107
+  Usage of /:   24.5% of 78.56GB   Users logged in:       1
+  Memory usage: 12%                IPv4 address for ens3: 10.0.2.100
   Swap usage:   0%
 
  * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
@@ -66,10 +66,10 @@ Expanded Security Maintenance for Applications is not enabled.
 Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 
-Last login: Sat Feb 14 10:00:30 2026 from 10.0.2.1
+Last login: Wed Mar  4 22:00:30 2026 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 13 16:40:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 6.8.0-101-generic #101-Ubuntu SMP PREEMPT_DYNAMIC Mon Feb  9 10:15:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
 $
 $ lsb_release -a
 No LSB modules are available.

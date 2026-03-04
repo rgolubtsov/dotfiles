@@ -26,8 +26,8 @@ $ echo && cat /proc/meminfo | grep Mem && \
   cat /proc/meminfo | grep Swap
 
 MemTotal:        1807228 kB
-MemFree:          277704 kB
-MemAvailable:    1420296 kB
+MemFree:         1044804 kB
+MemAvailable:    1463648 kB
 ---------------------------
 SwapCached:            0 kB
 SwapTotal:       5242876 kB
