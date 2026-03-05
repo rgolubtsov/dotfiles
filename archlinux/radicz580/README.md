@@ -48,7 +48,7 @@ Release:        rolling
 Codename:       n/a
 ```
 
-**Packages from the AUR (2025-12-13):**
+**Packages from the AUR (2025-12-13 + 2026-02-03):**
 
 ```
 $ pacman -Qm
@@ -64,6 +64,7 @@ wmclockmon 0.8.1-7
 wmcpuload 1.1.1-1
 wmnetload 1.3-3
 wmsystemtray 1.4-3
+zoom 6.7.2-1
 ```
 
 **A typical system load: uptime and process tree (2025-10-02):**
