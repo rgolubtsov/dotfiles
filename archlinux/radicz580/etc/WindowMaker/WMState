@@ -2,7 +2,7 @@
   Dock = {
     Applications = (
       {
-        Command = "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs";
+        Command = "/usr/bin/WPrefs";
         Name = Logo.WMDock;
         AutoLaunch = No;
         Forced = No;
