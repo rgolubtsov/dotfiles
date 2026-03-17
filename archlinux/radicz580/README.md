@@ -18,27 +18,27 @@ $ echo && cat /proc/cpuinfo | grep CPU | uniq                       && \
 
 model name	: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
 ----------------------------------------------------------
-bogomips	: 4789.11
+bogomips	: 4789.20
 Total: 4
 $
-$ # === Memory (2025-12-13):
+$ # === Memory (2026-03-17):
 $
 $ echo && cat /proc/meminfo | grep Mem && \
   echo '---------------------------'   && \
   cat /proc/meminfo | grep Swap
 
-MemTotal:        5922444 kB
-MemFree:         1456540 kB
-MemAvailable:    3734816 kB
+MemTotal:        5921484 kB
+MemFree:         1949700 kB
+MemAvailable:    4169612 kB
 ---------------------------
 SwapCached:            0 kB
 SwapTotal:       8787988 kB
-SwapFree:        8787972 kB
+SwapFree:        8787988 kB
 $
 $ # === The running kernel:
 $
 $ uname -a
-Linux radicz580 6.17.9-arch1-1 #1 SMP PREEMPT_DYNAMIC Mon, 24 Nov 2025 15:21:09 +0000 x86_64 GNU/Linux
+Linux radicz580 6.19.8-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 14 Mar 2026 01:07:43 +0000 x86_64 GNU/Linux
 $
 $ lsb_release -a
 LSB Version:    n/a
@@ -48,7 +48,7 @@ Release:        rolling
 Codename:       n/a
 ```
 
-**Packages from the AUR (2025-12-13 + 2026-02-03):**
+**Packages from the AUR (2026-03-17):**
 
 ```
 $ pacman -Qm
@@ -57,14 +57,12 @@ jmtpfs 0.5-3
 libdockapp 0.7.3-1
 normalize 0.7.7-7
 pm-utils 1.4.1-8
-rxvt-unicode-truecolor-wide-glyphs 9.31-11
-vlang 0.4.11-1
-windowmaker 0.96.0-1
+rxvt-unicode-truecolor-wide-glyphs 9.31-12
 wmclockmon 0.8.1-7
 wmcpuload 1.1.1-1
 wmnetload 1.3-3
 wmsystemtray 1.4-3
-zoom 6.7.2-1
+zoom 6.7.5-1
 ```
 
 **A typical system load: uptime and process tree (2025-10-02):**
