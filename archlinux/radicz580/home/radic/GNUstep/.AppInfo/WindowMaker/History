@@ -1,8 +1,6 @@
 (
   "xscreensaver-command -lock",
   "xscreensaver-command -lock",
-  skypeforlinux,
   zoom,
-  urxvt,
   arkanoidsb
 )

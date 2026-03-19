@@ -30,6 +30,11 @@
   screenshot.Screenshot = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/screenshot.Screenshot.xpm";
   };
+  Chromium = {
+    AlwaysUserIcon = No;
+    Icon = Mozilla.png;
+    EmulateAppIcon = Yes;
+  };
   "file-jpeg.File-jpeg" = {
     Icon = "/home/radic/GNUstep/Library/WindowMaker/CachedPixmaps/file-jpeg.File-jpeg.xpm";
   };

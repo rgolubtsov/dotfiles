@@ -45,7 +45,6 @@
       (LibreOffice, EXEC, libreoffice)
     ),
     (Sound, ("ALSA mixer", EXEC, "xterm -e alsamixer")),
-    (Viewers, (Xpdf, EXEC, xpdf)),
     (System, (top, EXEC, "xterm -e top")),
     (
       "P2P Network",

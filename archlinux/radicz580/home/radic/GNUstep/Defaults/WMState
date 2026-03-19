@@ -9,7 +9,7 @@
         AutoLaunch = No;
         Position = "0,0";
         Lock = Yes;
-        Command = "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs";
+        Command = "/usr/bin/WPrefs";
       },
       {
         Forced = No;
@@ -84,7 +84,7 @@
         AutoLaunch = No;
         Position = "0,0";
         Lock = Yes;
-        Command = "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs";
+        Command = "/usr/bin/WPrefs";
       },
       {
         Forced = No;
