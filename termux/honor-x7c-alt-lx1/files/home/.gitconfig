@@ -3,3 +3,5 @@
 	email = rgolubtsov@/mailbox-domain/
 [core]
 	editor = vim
+[pull]
+	rebase = false
