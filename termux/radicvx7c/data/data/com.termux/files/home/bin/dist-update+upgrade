@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# ~/bin/dist-update+upgrade
+# =============================================================================
+# This helper script... TODO: Does what? :-)
+# =============================================================================
+# (See the LICENSE file at the top of the source tree.)
+#
+
+# Helper constants.
+declare -r EXIT_FAILURE=1 #    Failing exit status.
+declare -r EXIT_SUCCESS=0 # Successful exit status.
+
+apt-get update
+sleep 3
+apt-get update
+sleep 3
+apt-get update
+sleep 3
+
+apt-get upgrade
+apt-get dist-upgrade
+apt-get upgrade
+apt-get dist-upgrade
+apt-get upgrade
+sleep 2
+
+apt-get autoremove --purge
+apt-get purge
+apt-get autoclean
+apt-get clean
+apt-get check
+sleep 2
+
+dpkg --configure --pending
+dpkg --audit
+sleep 1
+
+# If there is an error -- telling the OS about this.
+if [ $? -eq ${EXIT_FAILURE} ]; then
+    exit    ${EXIT_FAILURE}
+fi
+
+exit        ${EXIT_SUCCESS}
+
+# vim:set nu et ts=4 sw=4:
