@@ -22,7 +22,8 @@
       Development,
       (gitk, EXEC, gitk),
       (idle, EXEC, idle),
-      (tclsh, EXEC, "xterm -e tclsh")
+      (tclsh, EXEC, "xterm -e tclsh"),
+      (gdb, EXEC, "xterm -e gdb")
     ),
     (
       "Window Maker",
