@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # ~/bin/dist-update+upgrade
 # =============================================================================
-# This helper script... TODO: Does what? :-)
+# This helper script automates the process of updating and upgrading the distro
+# on a relatively overopinionated manner. Use it straightforwardly
+# and watch the upgrading progress without any interruptions.
 # =============================================================================
 # (See the LICENSE file at the top of the source tree.)
 #
