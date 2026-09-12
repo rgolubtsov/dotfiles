@@ -51,7 +51,7 @@ $ uptime -s
 2026-09-11 20:40:32
 ```
 
-**Packages from the AUR (2026-05-30):**
+**Packages from the AUR (2026-09-11):**
 
 ```
 $ pacman -Qm
@@ -60,13 +60,13 @@ jmtpfs 0.5-3
 libdockapp 0.7.3-1
 normalize 0.7.7-8
 pm-utils 1.4.1-8
-rxvt-unicode-truecolor-wide-glyphs 9.31-13
-vlang 0.5.1-1
+rxvt-unicode-truecolor-wide-glyphs 9.31-14
+vlang 0.5.2-1
 wmclockmon 0.8.1-7
 wmcpuload 1.1.1-1
 wmnetload 1.3-3
 wmsystemtray 1.4-3
-zoom 7.0.0-1
+zoom 7.1.5-1
 ```
 
 **A typical system load: uptime and process tree (2025-10-02):**
