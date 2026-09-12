@@ -18,27 +18,27 @@ $ echo && cat /proc/cpuinfo | grep CPU | uniq                       && \
 
 model name	: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
 ----------------------------------------------------------
-bogomips	: 4789.47
+bogomips	: 4789.02
 Total: 4
 $
-$ # === Memory (2026-05-30):
+$ # === Memory (2026-09-12):
 $
 $ echo && cat /proc/meminfo | grep Mem && \
   echo '---------------------------'   && \
   cat /proc/meminfo | grep Swap
 
-MemTotal:        5920140 kB
-MemFree:         1364784 kB
-MemAvailable:    3923448 kB
+MemTotal:        5919112 kB
+MemFree:         1527976 kB
+MemAvailable:    3888232 kB
 ---------------------------
-SwapCached:        30316 kB
+SwapCached:            0 kB
 SwapTotal:       8787988 kB
-SwapFree:        8732112 kB
+SwapFree:        8787988 kB
 $
 $ # === The running kernel:
 $
 $ uname -a
-Linux radicz580 7.0.9-arch1-1 #1 SMP PREEMPT_DYNAMIC Sun, 17 May 2026 17:23:07 +0000 x86_64 GNU/Linux
+Linux radicz580 7.2.4-arch1-2 #1 SMP PREEMPT_DYNAMIC Tue, 08 Sep 2026 10:22:31 +0000 x86_64 GNU/Linux
 $
 $ lsb_release -a
 LSB Version:    n/a
@@ -46,6 +46,9 @@ Distributor ID: Arch
 Description:    Arch Linux
 Release:        rolling
 Codename:       n/a
+$
+$ uptime -s
+2026-09-11 20:40:32
 ```
 
 **Packages from the AUR (2026-05-30):**
