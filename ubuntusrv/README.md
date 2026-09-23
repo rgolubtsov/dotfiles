@@ -40,43 +40,46 @@ SSH-ing in to this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-101-generic x86_64)
+Welcome to Ubuntu 26.04.1 LTS (GNU/Linux 7.0.0-31-generic x86_64)
 
- * Documentation:  https://help.ubuntu.com
+ * Documentation:  https://docs.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/pro
 
- System information as of Wed Mar  4 10:50:10 PM CET 2026
+ System information as of Wed Sep 23 07:50:30 PM CEST 2026
 
-  System load:  0.07               Processes:             107
+  System load:  0.2                Processes:             115
   Usage of /:   24.5% of 78.56GB   Users logged in:       1
-  Memory usage: 12%                IPv4 address for ens3: 10.0.2.100
+  Memory usage: 22%                IPv4 address for ens3: 10.0.2.100
   Swap usage:   0%
 
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
+ * Canonical Workshop gives developers fast, composable, reproducible, and
+   secure developer environments that are perfect for agentic workflows.
 
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+   https://ubuntu.com/workshop
 
 Expanded Security Maintenance for Applications is not enabled.
 
 0 updates can be applied immediately.
 
-4 additional security updates can be applied with ESM Apps.
+3 additional security updates can be applied with ESM Apps.
 Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 
-Last login: Wed Mar  4 22:00:30 2026 from 10.0.2.1
+Last login: Wed Sep 23 18:50:10 2026 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 6.8.0-101-generic #101-Ubuntu SMP PREEMPT_DYNAMIC Mon Feb  9 10:15:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+Linux radicv144 7.0.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026 x86_64 GNU/Linux
 $
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
-Description:    Ubuntu 24.04.4 LTS
-Release:        24.04
-Codename:       noble
+Description:    Ubuntu 26.04.1 LTS
+Release:        26.04
+Codename:       resolute
+$
+$ uptime -s
+2026-09-22 22:50:52
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**
