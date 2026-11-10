@@ -128,4 +128,6 @@ PS1="[\[\e[0;95m\]\t\[\e[0m\]][\[\e[0;96m\]\u\[\e[0m\]][\[\e[0;94m\]\h\[\e[0m\]]
 
 #export {http,https,ftp}_proxy=http://192.168.0.6:8080
 
-# vim:set nu et ts=4 sw=4:
+# vim:set nu et ts=4 sw=4: #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
