@@ -16,8 +16,8 @@ Starting up SSH agent in the background and adding a private key:
 ```
 $ eval `ssh-agent -s` && ssh-add
 Agent pid <PID>
-Enter passphrase for /home/radic/.ssh/id_rsa:
-Identity added: /home/radic/.ssh/id_rsa (/home/radic/.ssh/id_rsa)
+Enter passphrase for /home/radic/.ssh/id_ed25519:
+Identity added: /home/radic/.ssh/id_ed25519 (radic-at-radicz580-on-2025-03-19T19:00+03:00)
 ```
 
 **Note:** `radicv144` below is the Ubuntu Server hostname assigned to its IP address `10.0.2.100` as the following:
@@ -40,16 +40,16 @@ SSH-ing in to this box:
 
 ```
 $ ssh -C radicv144
-Welcome to Ubuntu 26.04.1 LTS (GNU/Linux 7.0.0-31-generic x86_64)
+Welcome to Ubuntu 26.04.1 LTS (GNU/Linux 7.0.0-43-generic x86_64)
 
  * Documentation:  https://docs.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/pro
 
- System information as of Wed Sep 23 07:50:30 PM CEST 2026
+ System information as of Tue Nov 10 03:40:10 PM CET 2026
 
-  System load:  0.2                Processes:             115
-  Usage of /:   24.5% of 78.56GB   Users logged in:       1
+  System load:  0.13               Processes:             110
+  Usage of /:   25.3% of 78.56GB   Users logged in:       1
   Memory usage: 22%                IPv4 address for ens3: 10.0.2.100
   Swap usage:   0%
 
@@ -62,14 +62,14 @@ Expanded Security Maintenance for Applications is not enabled.
 
 0 updates can be applied immediately.
 
-3 additional security updates can be applied with ESM Apps.
+4 additional security updates can be applied with ESM Apps.
 Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 
-Last login: Wed Sep 23 18:50:10 2026 from 10.0.2.1
+Last login: Tue Nov 10 15:40:20 2026 from 10.0.2.1
 $
 $ uname -a
-Linux radicv144 7.0.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026 x86_64 GNU/Linux
+Linux radicv144 7.0.0-43-generic #43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:25:25 UTC 2026 x86_64 GNU/Linux
 $
 $ lsb_release -a
 No LSB modules are available.
@@ -79,7 +79,7 @@ Release:        26.04
 Codename:       resolute
 $
 $ uptime -s
-2026-09-22 22:50:52
+2026-11-09 20:00:47
 ```
 
 **Adding another disk partition (if needed), let's say of 60 Gigabytes:**

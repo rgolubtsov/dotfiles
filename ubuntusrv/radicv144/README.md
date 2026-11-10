@@ -21,29 +21,29 @@ $ echo && cat /proc/cpuinfo | grep CPU | uniq                       && \
   cat /proc/cpuinfo | grep bogomips | uniq                          && \
   echo -n 'Total: ' && cat /proc/cpuinfo | grep CPU | wc -l
 
-model name	: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
+model name      : Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
 ----------------------------------------------------------
-bogomips	: 4789.12
+bogomips        : 4789.12
 Total: 2
 $
-$ # === Memory (2026-09-25):
+$ # === Memory (2026-11-10):
 $
 $ echo && cat /proc/meminfo | grep Mem && \
   echo '---------------------------'   && \
   cat /proc/meminfo | grep Swap
 
-MemTotal:        1699120 kB
-MemFree:          324340 kB
-MemAvailable:    1275668 kB
+MemTotal:        1699080 kB
+MemFree:          308808 kB
+MemAvailable:    1300740 kB
 ---------------------------
-SwapCached:         4204 kB
+SwapCached:            4 kB
 SwapTotal:       5242876 kB
-SwapFree:        5225368 kB
+SwapFree:        5242872 kB
 $
 $ # === The running kernel:
 $
 $ uname -a
-Linux radicv144 7.0.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026 x86_64 GNU/Linux
+Linux radicv144 7.0.0-43-generic #43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:25:25 UTC 2026 x86_64 GNU/Linux
 $
 $ lsb_release -a
 No LSB modules are available.
@@ -53,5 +53,5 @@ Release:        26.04
 Codename:       resolute
 $
 $ uptime -s
-2026-09-22 22:50:52
+2026-11-09 20:00:47
 ```
